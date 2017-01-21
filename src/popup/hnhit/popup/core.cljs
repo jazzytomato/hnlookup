@@ -15,6 +15,8 @@
 (defonce popup-state
   (r/atom {:items []}))
 
+(def items-cursor (r/cursor popup-state [:items]))
+
 ; HN Logic
 (def hn-api-search-url "https://hn.algolia.com/api/v1/search?query=")
 (def hn-submit-link "https://news.ycombinator.com/submitlink?u=")
@@ -32,14 +34,20 @@
   )
 
 (defn search-tab-url []
-    (go
+  (go
     (if-let [[tabs] (<! (tabs/query #js {"active" true "currentWindow" true}))]
       (get-topics (build-search-term(.-url (first tabs)))))))
 
-(defn is-story? [item]
-  (nil? (:story_id item)))
-
+(defn is-story? [item] (nil? (:story_id item)))
 (def is-comment? (complement is-story?))
+
+(defn stories []
+  (sort-by :points > (filter is-story? @items-cursor)))
+
+(defn related-stories []
+  "Return the list of items that matched a comment, distinct by story id"
+  (map first (vals (group-by :story_id (filter is-comment? @items-cursor)))))
+
 
 ;; React components
 (defn state-logger-btn []
@@ -59,16 +67,16 @@
 
 (defn stories-cpt []
   [rc/v-box :children [
-    [:h2 "Hacker news stories:"]
+    [:h2 "Stories:"]
     [:ul
-     (for [item (sort-by :points > (filter is-story? (:items @popup-state)))]
+     (for [item (stories)]
        ^{:key item} [:li (story-cpt item)])]]])
 
 (defn related-stories-cpt []
   [rc/v-box :children [
     [:h2 "Related"]
     [:ul
-     (for [item (filter is-comment? (:items @popup-state))]
+     (for [item (related-stories)]
      ^{:key item} [:li (comment-cpt item)])]]])
 
 (defn main-hn-cpt []
