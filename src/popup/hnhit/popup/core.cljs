@@ -67,24 +67,29 @@
 
 (defn stories-cpt []
   [rc/v-box :children [
-    [:h2 "Stories:"]
+    [rc/title
+     :label "Stories:"
+     :level :level2
+     :underline? true]
     [:ul
      (for [item (stories)]
        ^{:key item} [:li (story-cpt item)])]]])
 
 (defn related-stories-cpt []
   [rc/v-box :children [
-    [:h2 "Related"]
+    [rc/title
+     :label "Related"
+     :level :level2
+     :underline? true]
     [:ul
      (for [item (related-stories)]
-     ^{:key item} [:li (comment-cpt item)])]]])
+       ^{:key item} [:li (comment-cpt item)])]]])
 
 (defn main-hn-cpt []
   (if (empty? (:items @popup-state))
-    [rc/throbber]
+    [rc/throbber :color "#F77C01"]
     [rc/v-box
-     :children [[state-logger-btn]
-                [stories-cpt]
+     :children [[stories-cpt]
                 [related-stories-cpt]]]))
 
 
@@ -93,6 +98,7 @@
    :v-scroll :auto
    :height   "600px"
    :width    "600px"
+   :padding  "10px"
    :child    [main-hn-cpt]])
 
 
