@@ -7,11 +7,9 @@
   <name>hnhit</name>
   <description/>
   <scm>
-    <connection>scm:git:git://github.com/binaryage/chromex-sample.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/binaryage/chromex-sample.git</developerConnection>
-    <tag>207cd1a1b5103a614d225c2eb620764a58deec89
+    <tag>8539a906f63a376f7a05a7f177c6648871aac658
 </tag>
-    <url>https://github.com/binaryage/chromex-sample</url>
+    <url/>
   </scm>
   <build>
     <sourceDirectory>src/background</sourceDirectory>
@@ -121,6 +119,11 @@
       <groupId>reagent</groupId>
       <artifactId>reagent</artifactId>
       <version>0.6.0</version>
+    </dependency>
+    <dependency>
+      <groupId>re-com</groupId>
+      <artifactId>re-com</artifactId>
+      <version>1.3.0</version>
     </dependency>
   </dependencies>
 </project>

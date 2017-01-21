@@ -8,14 +8,12 @@
             [chromex.ext.runtime :as runtime :refer-macros [connect]]
             [chromex.ext.tabs :as tabs]
             [goog.dom :as gdom]
-            [reagent.core :as r]))
+            [reagent.core :as r]
+            [re-com.core :as rc]))
 
 ; Popup state
 (defonce popup-state
-  (r/atom
-    {:url "Nothing yet"
-     :items []}
-    ))
+  (r/atom {:items []}))
 
 ; HN Logic
 (def hn-api-search-url "https://hn.algolia.com/api/v1/search?query=")
@@ -38,24 +36,57 @@
     (if-let [[tabs] (<! (tabs/query #js {"active" true "currentWindow" true}))]
       (get-topics (build-search-term(.-url (first tabs)))))))
 
+(defn is-story? [item]
+  (nil? (:story_id item)))
+
+(def is-comment? (complement is-story?))
+
 ;; React components
 (defn state-logger-btn []
-  [:button {:on-click #(log @popup-state)} "Log the state"])
+  [rc/button
+    :label "Log the state"
+    :on-click #(log @popup-state)])
 
-(defn item-cpt [item]
+(defn story-cpt [item]
   (let [url (str hn-item-url (:objectID item))]
-    [:span (str "[" (:points item) "] ")
+    [:p (str "[" (:points item) "] ")
       [:a {:href url} (:title item)]
-      (str " (" (:num_comments item) ")")]
-  ))
+      (str " (" (:num_comments item) " comments)")]))
+
+(defn comment-cpt [item]
+  (let [url (str hn-item-url (:story_id item))]
+    [:p [:a {:href url} (:story_title item)]]))
+
+(defn stories-cpt []
+  [rc/v-box :children [
+    [:h2 "Hacker news stories:"]
+    [:ul
+     (for [item (sort-by :points > (filter is-story? (:items @popup-state)))]
+       ^{:key item} [:li (story-cpt item)])]]])
+
+(defn related-stories-cpt []
+  [rc/v-box :children [
+    [:h2 "Related"]
+    [:ul
+     (for [item (filter is-comment? (:items @popup-state))]
+     ^{:key item} [:li (comment-cpt item)])]]])
+
+(defn main-hn-cpt []
+  (if (empty? (:items @popup-state))
+    [rc/throbber]
+    [rc/v-box
+     :children [[state-logger-btn]
+                [stories-cpt]
+                [related-stories-cpt]]]))
+
 
 (defn frame []
-  [:div {:style {:width "600px" :height "400px"}}
-   [:p (:url @popup-state)]
-   [:ul
-   (for [item (sort-by :points > (:items @popup-state))]
-     ^{:key item} [:li (item-cpt item)])]
-   [state-logger-btn]])
+  [rc/scroller
+   :v-scroll :auto
+   :height   "600px"
+   :width    "600px"
+   :child    [main-hn-cpt]])
+
 
 (defn mountit []
   (r/render [frame] (aget (query "#main") 0)))

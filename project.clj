@@ -7,7 +7,8 @@
                  [figwheel "0.5.7"]
                  [environ "1.1.0"]
                  [cljs-http "0.1.9"]
-                 [reagent "0.6.0"]]
+                 [reagent "0.6.0"]
+                 [re-com "1.3.0"]]
 
   :plugins [[lein-cljsbuild "1.1.4"]
             [lein-figwheel "0.5.7"]
