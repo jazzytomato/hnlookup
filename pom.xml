@@ -7,9 +7,11 @@
   <name>hnhit</name>
   <description/>
   <scm>
-    <tag>8539a906f63a376f7a05a7f177c6648871aac658
+    <connection>scm:git:git://github.com/jazzytomato/hnhit.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/jazzytomato/hnhit.git</developerConnection>
+    <tag>f2c123ab6895380d56cdb7f804827c72aab1ed49
 </tag>
-    <url/>
+    <url>https://github.com/jazzytomato/hnhit</url>
   </scm>
   <build>
     <sourceDirectory>src/background</sourceDirectory>

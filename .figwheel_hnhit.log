@@ -1,0 +1,409 @@
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 1.032 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/goog/deps.js
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.591 seconds.[0m
+[36m----  Could not Read  src/popup/hnhit/popup/core.cljs   line:82  column:32  ----[0m
+
+  [1mMap literal must contain an even number of forms[0m
+
+  [36m80[0m  [36m  (let [url (str hn-item-url (:objectID item))][0m
+  [36m81[0m  [36m    [:p (str "[" (:points item) "] ")[0m
+  [33m82[0m  [1m     [:a {:href url :on-click } (:title item)][0m
+  [0m  [0m  [33m                               ^--- Map literal must contain an even number of forms[0m
+  [36m83[0m  [36m     (str " (" (:num_comments item) " comments)")]))[0m
+  [36m84[0m  [36m[0m
+  [36m85[0m  [36m(defn comment-cpt [item][0m
+
+[36m----  Reader Error : Please see src/popup/hnhit/popup/core.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.803 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.388 seconds.[0m
+[36m----  Could not Analyze  src/popup/hnhit/popup/core.cljs   line:83  column:28  ----[0m
+
+  [1mWrong number of args (0) passed to: tabs/create[0m
+
+  [36m81[0m  [36m[:p (str "[" (:points item) "] ")[0m
+  [36m82[0m  [36m [:a {:href     url[0m
+  [33m83[0m  [1m      :on-click (fn [] (tabs/create ))[0m
+  [0m  [0m  [33m                       ^--- Wrong number of args (0) passed to: tabs/create[0m
+  [36m84[0m  [36m      } (:title item)][0m
+  [36m85[0m  [36m (str " (" (:num_comments item) " comments)")]))[0m
+
+[36m----  Analysis Error : Please see src/popup/hnhit/popup/core.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.713 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.719 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.969 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.821 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.499 seconds.[0m
+[36m----  Could not Read  src/popup/hnhit/popup/core.cljs   line:83  column:22  ----[0m
+
+  [1mUnmatched delimiter )[0m
+
+  [36m81[0m  [36m[:p (str "[" (:points item) "] ")[0m
+  [36m82[0m  [36m [:a {:href     url[0m
+  [33m83[0m  [1m      :on-click )[0m
+  [0m  [0m  [33m                 ^--- Unmatched delimiter )[0m
+  [36m84[0m  [36m      } (:title item)][0m
+  [36m85[0m  [36m (str " (" (:num_comments item) " comments)")]))[0m
+
+[36m----  Reader Error : Please see src/popup/hnhit/popup/core.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[36m----  Compiler Warning on   src/popup/hnhit/popup/core.cljs   line:30  column:1  ----[0m
+
+  [1mCan't take value of macro cljs.core/defn[0m
+
+  [36m26[0m  [36m(def items-cursor (r/cursor app-state [:items]))[0m
+  [36m27[0m  [36m[0m
+  [36m28[0m  [36m(defn no-results? [] (empty? @items-cursor))[0m
+  [36m29[0m  [36m[0m
+  [33m30[0m  [1mdefn open-passive-tab [url][0m
+  [0m  [0m  [33m^--- Can't take value of macro cljs.core/defn[0m
+  [36m31[0m  [36m  #((tabs/create #js {"url" url "active" false}))[0m
+  [36m32[0m  [36m[0m
+  [36m33[0m  [36m; HN Logic[0m
+  [36m34[0m  [36m(def hn-api-search-url "https://hn.algolia.com/api/v1/search?query=")[0m
+  [36m35[0m  [36m(def hn-submit-link "https://news.ycombinator.com/submitlink")[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnhit/popup/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/popup/hnhit/popup/core.cljs   line:30  column:6  ----[0m
+
+  [1mUse of undeclared Var hnhit.popup.core/open-passive-tab[0m
+
+  [36m26[0m  [36m(def items-cursor (r/cursor app-state [:items]))[0m
+  [36m27[0m  [36m[0m
+  [36m28[0m  [36m(defn no-results? [] (empty? @items-cursor))[0m
+  [36m29[0m  [36m[0m
+  [33m30[0m  [1mdefn open-passive-tab [url][0m
+  [0m  [0m  [33m     ^--- Use of undeclared Var hnhit.popup.core/open-passive-tab[0m
+  [36m31[0m  [36m  #((tabs/create #js {"url" url "active" false}))[0m
+  [36m32[0m  [36m[0m
+  [36m33[0m  [36m; HN Logic[0m
+  [36m34[0m  [36m(def hn-api-search-url "https://hn.algolia.com/api/v1/search?query=")[0m
+  [36m35[0m  [36m(def hn-submit-link "https://news.ycombinator.com/submitlink")[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnhit/popup/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/popup/hnhit/popup/core.cljs   line:30  column:24  ----[0m
+
+  [1mUse of undeclared Var hnhit.popup.core/url[0m
+
+  [36m26[0m  [36m(def items-cursor (r/cursor app-state [:items]))[0m
+  [36m27[0m  [36m[0m
+  [36m28[0m  [36m(defn no-results? [] (empty? @items-cursor))[0m
+  [36m29[0m  [36m[0m
+  [33m30[0m  [1mdefn open-passive-tab [url][0m
+  [0m  [0m  [33m                       ^--- Use of undeclared Var hnhit.popup.core/url[0m
+  [36m31[0m  [36m  #((tabs/create #js {"url" url "active" false}))[0m
+  [36m32[0m  [36m[0m
+  [36m33[0m  [36m; HN Logic[0m
+  [36m34[0m  [36m(def hn-api-search-url "https://hn.algolia.com/api/v1/search?query=")[0m
+  [36m35[0m  [36m(def hn-submit-link "https://news.ycombinator.com/submitlink")[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnhit/popup/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/popup/hnhit/popup/core.cljs   line:31  column:29  ----[0m
+
+  [1mUse of undeclared Var hnhit.popup.core/url[0m
+
+  [36m28[0m  [36m(defn no-results? [] (empty? @items-cursor))[0m
+  [36m29[0m  [36m[0m
+  [36m30[0m  [36mdefn open-passive-tab [url][0m
+  [33m31[0m  [1m  #((tabs/create #js {"url" url "active" false}))[0m
+  [0m  [0m  [33m                            ^--- Use of undeclared Var hnhit.popup.core/url[0m
+  [36m32[0m  [36m[0m
+  [36m33[0m  [36m; HN Logic[0m
+  [36m34[0m  [36m(def hn-api-search-url "https://hn.algolia.com/api/v1/search?query=")[0m
+  [36m35[0m  [36m(def hn-submit-link "https://news.ycombinator.com/submitlink")[0m
+  [36m36[0m  [36m(def hn-item-url "https://news.ycombinator.com/item?id=")[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnhit/popup/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/popup/hnhit/popup/core.cljs   line:86  column:30  ----[0m
+
+  [1mUse of undeclared Var hnhit.popup.core/open-passive-tab[0m
+
+  [36m82[0m  [36m(defn story-cpt [item][0m
+  [36m83[0m  [36m  (let [url (str hn-item-url (:objectID item))][0m
+  [36m84[0m  [36m    [:p (str "[" (:points item) "] ")[0m
+  [36m85[0m  [36m     [:a {:href     url[0m
+  [33m86[0m  [1m          :on-click (partial open-passive-tab url)[0m
+  [0m  [0m  [33m                             ^--- Use of undeclared Var hnhit.popup.core/open-passive-tab[0m
+  [36m87[0m  [36m          } (:title item)][0m
+  [36m88[0m  [36m     (str " (" (:num_comments item) " comments)")]))[0m
+  [36m89[0m  [36m[0m
+  [36m90[0m  [36m(defn comment-cpt [item][0m
+  [36m91[0m  [36m  (let [url (str hn-item-url (:story_id item))][0m
+
+[36m----  Compiler Warning : Please see src/popup/hnhit/popup/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 1.301 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 1.262 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[36m----  Compiler Warning on   src/popup/hnhit/popup/core.cljs   line:30  column:1  ----[0m
+
+  [1mCan't take value of macro cljs.core/defn[0m
+
+  [36m26[0m  [36m(def items-cursor (r/cursor app-state [:items]))[0m
+  [36m27[0m  [36m[0m
+  [36m28[0m  [36m(defn no-results? [] (empty? @items-cursor))[0m
+  [36m29[0m  [36m[0m
+  [33m30[0m  [1mdefn open-passive-tab [url][0m
+  [0m  [0m  [33m^--- Can't take value of macro cljs.core/defn[0m
+  [36m31[0m  [36m  #((tabs/create #js {"url" url "active" false}))[0m
+  [36m32[0m  [36m[0m
+  [36m33[0m  [36m; HN Logic[0m
+  [36m34[0m  [36m(def hn-api-search-url "https://hn.algolia.com/api/v1/search?query=")[0m
+  [36m35[0m  [36m(def hn-submit-link "https://news.ycombinator.com/submitlink")[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnhit/popup/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/popup/hnhit/popup/core.cljs   line:30  column:6  ----[0m
+
+  [1mUse of undeclared Var hnhit.popup.core/open-passive-tab[0m
+
+  [36m26[0m  [36m(def items-cursor (r/cursor app-state [:items]))[0m
+  [36m27[0m  [36m[0m
+  [36m28[0m  [36m(defn no-results? [] (empty? @items-cursor))[0m
+  [36m29[0m  [36m[0m
+  [33m30[0m  [1mdefn open-passive-tab [url][0m
+  [0m  [0m  [33m     ^--- Use of undeclared Var hnhit.popup.core/open-passive-tab[0m
+  [36m31[0m  [36m  #((tabs/create #js {"url" url "active" false}))[0m
+  [36m32[0m  [36m[0m
+  [36m33[0m  [36m; HN Logic[0m
+  [36m34[0m  [36m(def hn-api-search-url "https://hn.algolia.com/api/v1/search?query=")[0m
+  [36m35[0m  [36m(def hn-submit-link "https://news.ycombinator.com/submitlink")[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnhit/popup/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/popup/hnhit/popup/core.cljs   line:30  column:24  ----[0m
+
+  [1mUse of undeclared Var hnhit.popup.core/url[0m
+
+  [36m26[0m  [36m(def items-cursor (r/cursor app-state [:items]))[0m
+  [36m27[0m  [36m[0m
+  [36m28[0m  [36m(defn no-results? [] (empty? @items-cursor))[0m
+  [36m29[0m  [36m[0m
+  [33m30[0m  [1mdefn open-passive-tab [url][0m
+  [0m  [0m  [33m                       ^--- Use of undeclared Var hnhit.popup.core/url[0m
+  [36m31[0m  [36m  #((tabs/create #js {"url" url "active" false}))[0m
+  [36m32[0m  [36m[0m
+  [36m33[0m  [36m; HN Logic[0m
+  [36m34[0m  [36m(def hn-api-search-url "https://hn.algolia.com/api/v1/search?query=")[0m
+  [36m35[0m  [36m(def hn-submit-link "https://news.ycombinator.com/submitlink")[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnhit/popup/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/popup/hnhit/popup/core.cljs   line:31  column:29  ----[0m
+
+  [1mUse of undeclared Var hnhit.popup.core/url[0m
+
+  [36m28[0m  [36m(defn no-results? [] (empty? @items-cursor))[0m
+  [36m29[0m  [36m[0m
+  [36m30[0m  [36mdefn open-passive-tab [url][0m
+  [33m31[0m  [1m  #((tabs/create #js {"url" url "active" false}))[0m
+  [0m  [0m  [33m                            ^--- Use of undeclared Var hnhit.popup.core/url[0m
+  [36m32[0m  [36m[0m
+  [36m33[0m  [36m; HN Logic[0m
+  [36m34[0m  [36m(def hn-api-search-url "https://hn.algolia.com/api/v1/search?query=")[0m
+  [36m35[0m  [36m(def hn-submit-link "https://news.ycombinator.com/submitlink")[0m
+  [36m36[0m  [36m(def hn-item-url "https://news.ycombinator.com/item?id=")[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnhit/popup/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/popup/hnhit/popup/core.cljs   line:86  column:30  ----[0m
+
+  [1mUse of undeclared Var hnhit.popup.core/open-passive-tab[0m
+
+  [36m82[0m  [36m(defn story-cpt [item][0m
+  [36m83[0m  [36m  (let [url (str hn-item-url (:objectID item))][0m
+  [36m84[0m  [36m    [:p (str "[" (:points item) "] ")[0m
+  [36m85[0m  [36m     [:a {:href     url[0m
+  [33m86[0m  [1m          :on-click (partial open-passive-tab url)[0m
+  [0m  [0m  [33m                             ^--- Use of undeclared Var hnhit.popup.core/open-passive-tab[0m
+  [36m87[0m  [36m          } (:title item)][0m
+  [36m88[0m  [36m     (str " (" (:num_comments item) " comments)")]))[0m
+  [36m89[0m  [36m[0m
+  [36m90[0m  [36m(defn comment-cpt [item][0m
+  [36m91[0m  [36m  (let [url (str hn-item-url (:story_id item))][0m
+
+[36m----  Compiler Warning : Please see src/popup/hnhit/popup/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.641 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.697 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.794 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.556 seconds.[0m
+[36m----  Could not Read  src/popup/hnhit/popup/core.cljs   line:84  column:44  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m82[0m  [36m(defn passive-tab-link-cpt [text url][0m
+  [36m83[0m  [36m  [:a {:href     url[0m
+  [33m84[0m  [1m       :on-click #((open-passive-tab url))][0m
+  [0m  [0m  [33m                                           ^--- Unmatched delimiter ][0m
+  [36m85[0m  [36m  )[0m
+  [36m86[0m  [36m[0m
+  [36m87[0m  [36m(defn story-cpt [item][0m
+
+[36m----  Reader Error : Please see src/popup/hnhit/popup/core.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.471 seconds.[0m
+[36m----  Could not Read  src/popup/hnhit/popup/core.cljs   line:84  column:44  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m82[0m  [36m(defn passive-tab-link-cpt [text url][0m
+  [36m83[0m  [36m  [rc/hyperlink {:href     url[0m
+  [33m84[0m  [1m       :on-click #((open-passive-tab url))][0m
+  [0m  [0m  [33m                                           ^--- Unmatched delimiter ][0m
+  [36m85[0m  [36m  )[0m
+  [36m86[0m  [36m[0m
+  [36m87[0m  [36m(defn story-cpt [item][0m
+
+[36m----  Reader Error : Please see src/popup/hnhit/popup/core.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.929 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.736 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.647 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.682 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.761 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.639 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.599 seconds.[0m
+[36m----  Could not Analyze  src/popup/hnhit/popup/core.cljs   line:101  column:25  ----[0m
+
+  [1mWrong number of args (3) passed to: core/for[0m
+
+  [36m 99[0m  [36m :underline? true][0m
+  [36m100[0m  [36m[:ul[0m
+  [33m101[0m  [1m (for [item (stories)][0m
+  [0m   [0m  [33m ^--- Wrong number of args (3) passed to: core/for[0m
+  [36m102[0m  [36m   ^{:key item} [:li (story-cpt item)][0m
+  [36m103[0m  [36m   [rc/gap])]]])[0m
+
+[36m----  Analysis Error : Please see src/popup/hnhit/popup/core.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.739 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.667 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.661 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.886 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.66 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.637 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.633 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.631 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.666 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.399 seconds.[0m
+[36m----  Could not Read  src/popup/hnhit/popup/core.cljs   line:88  column:74  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m86[0m  [36m    [rc/box[0m
+  [36m87[0m  [36m      [tab-link-cpt url (:title item)][0m
+  [33m88[0m  [1m      (str (:points item) " points. " (:num_comments item) " comments")]]))[0m
+  [0m  [0m  [33m                                                                         ^--- Unmatched delimiter ][0m
+  [36m89[0m  [36m[0m
+  [36m90[0m  [36m(defn comment-cpt [item][0m
+  [36m91[0m  [36m  (let [url (str hn-item-url (:story_id item))][0m
+
+[36m----  Reader Error : Please see src/popup/hnhit/popup/core.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.415 seconds.[0m
+[36m----  Could not Read  src/popup/hnhit/popup/core.cljs   line:90  column:75  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m88[0m  [36m     [:p[0m
+  [36m89[0m  [36m      [tab-link-cpt url (:title item)][0m
+  [33m90[0m  [1m      (str (:points item) " points. " (:num_comments item) " comments")]]]))[0m
+  [0m  [0m  [33m                                                                          ^--- Unmatched delimiter ][0m
+  [36m91[0m  [36m[0m
+  [36m92[0m  [36m(defn comment-cpt [item][0m
+  [36m93[0m  [36m  (let [url (str hn-item-url (:story_id item))][0m
+
+[36m----  Reader Error : Please see src/popup/hnhit/popup/core.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.649 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.658 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.652 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.918 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.64 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.411 seconds.[0m
+[36m----  Could not Read  src/popup/hnhit/popup/core.cljs   line:113  column:94  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m111[0m  [36m                        (for [item (related-stories)][0m
+  [36m112[0m  [36m                          ^{:key item} [:li[0m
+  [33m113[0m  [1m                                        {:style {:list-style-type "none"} [comment-cpt item]])]]])[0m
+  [0m   [0m  [33m                                                                                             ^--- Unmatched delimiter ][0m
+  [36m114[0m  [36m[0m
+  [36m115[0m  [36m(defn loading-cpt [][0m
+  [36m116[0m  [36m  [rc/box[0m
+
+[36m----  Reader Error : Please see src/popup/hnhit/popup/core.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.681 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.641 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js

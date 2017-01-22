@@ -76,8 +76,8 @@
 
              :figwheel
              {:figwheel {:server-port    6888
-                         :server-logfile ".figwheel_dirac.log"
-                         :repl           false}}
+                         :server-logfile ".figwheel_hnhit.log"
+                         :repl           true}}
 
              :cooper
              {:cooper {"content-dev" ["lein" "content-dev"]
