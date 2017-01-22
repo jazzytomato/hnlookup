@@ -407,3 +407,39 @@ notifying browser that file changed:  out/hnhit/popup/core.js
 [0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
 [32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.641 seconds.[0m
 notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.698 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.637 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.658 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.396 seconds.[0m
+[36m----  Could not Read  src/popup/hnhit/popup/core.cljs   line:88  column:110  ----[0m
+
+  [1mUnmatched delimiter )[0m
+
+  [36m86[0m  [36m     [:p[0m
+  [36m87[0m  [36m      [tab-link-cpt url (:title item)][0m
+  [33m88[0m  [1m      [:span {:style {:font-size "0.7em"}}(str (:points item) " points. " (:num_comments item) " comments")]))[0m
+  [0m  [0m  [33m                                                                                                             ^--- Unmatched delimiter )[0m
+  [36m89[0m  [36m[0m
+  [36m90[0m  [36m(defn comment-cpt [item][0m
+  [36m91[0m  [36m  (let [url (str hn-item-url (:story_id item))][0m
+
+[36m----  Reader Error : Please see src/popup/hnhit/popup/core.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.686 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.689 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.655 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.683 seconds.[0m
+notifying browser that file changed:  out/hnhit/popup/core.js

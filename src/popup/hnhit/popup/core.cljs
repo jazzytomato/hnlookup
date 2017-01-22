@@ -83,13 +83,15 @@
 
 (defn story-cpt [item]
   (let [url (str hn-item-url (:objectID item))]
-     [:span
+     [:p
       [tab-link-cpt url (:title item)]
-      (str (:points item) " points. " (:num_comments item) " comments")]))
+      [:span
+       {:style {:font-size "0.8em"}}
+       (str (:points item) " points. " (:num_comments item) " comments")]]))
 
 (defn comment-cpt [item]
   (let [url (str hn-item-url (:story_id item))]
-    [:p [:a {:href url} (:story_title item)]]))
+    [:p [tab-link-cpt url (:story_title item)]]))
 
 (defn stories-cpt []
   [rc/v-box :children [
@@ -111,7 +113,9 @@
                         :underline? true]
                        [:ul
                         (for [item (related-stories)]
-                          ^{:key item} [:li [comment-cpt item]])]]])
+                          ^{:key item} [:li
+                                        {:style {:list-style-type "none"}}
+                                        [comment-cpt item]])]]])
 
 (defn loading-cpt []
   [rc/box
