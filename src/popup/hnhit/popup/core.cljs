@@ -9,48 +9,69 @@
             [chromex.ext.tabs :as tabs]
             [goog.dom :as gdom]
             [reagent.core :as r]
-            [re-com.core :as rc]))
+            [re-com.core :as rc]
+            [hnhit.popup.components :as cpts]))
 
-; Popup state
 (defonce app-state
          (r/atom {:items   []
                   :loading false
+                  :error   nil
                   :url     nil
                   :title   nil
                   }))
 
-(defn loading? [] (:loading @app-state))
-(defn loading! [] (swap! app-state assoc :loading true))
-(defn finished-loading! [] (swap! app-state assoc :loading false))
-
 (def items-cursor (r/cursor app-state [:items]))
 
 (defn no-results? [] (empty? @items-cursor))
+(defn error? [] (:error @app-state))
+(defn loading? [] (:loading @app-state))
+(defn loading! [] (swap! app-state assoc :loading true :error nil))
+(defn finished-loading! [] (swap! app-state assoc :loading false))
 
-; HN Logic
 (def hn-api-search-url "https://hn.algolia.com/api/v1/search?query=")
 (def hn-submit-link "https://news.ycombinator.com/submitlink")
 (def hn-item-url "https://news.ycombinator.com/item?id=")
 
-(defn build-hn-submit-link []
+(defn is-story? [item] (nil? (:story_id item)))
+(def is-comment? (complement is-story?))
+
+(defn build-hn-url [item]
+  (str hn-item-url (item (if (is-story? item)
+                           :objectID
+                           :story_id))))
+
+
+(defn transform-response [r]
+  "Maps the relevant URL for each item of the reponse and returns the array of items"
+  (let [hits (get-in r [:body :hits])]
+    (map #(assoc % :hn-url (build-hn-url %)) hits)))
+
+(defn get-topics
+  "Queries the HN Api and update the state with results."
+  [url]
+  (loading!)
+  (go (let [response (<! (http/get (str hn-api-search-url url)))]
+        (if (= (:status response) 200)
+          (swap! app-state assoc :items (transform-response response))
+          (swap! app-state assoc :error (:status response)))
+        (finished-loading!))))
+
+
+(defn build-hn-submit-link
+  "Build a submit link based on the current tab url and title"
+  []
   (let [url (:url @app-state)
         title (:title @app-state)]
     (str hn-submit-link "?u=" url "&t=" title)))
-
-; TODO handle error response
-(defn get-topics [url]
-  (loading!)
-  (go (let [response (<! (http/get (str hn-api-search-url url)))]
-        (swap! app-state assoc :items (get-in response [:body :hits]))
-        (finished-loading!))))
-
 
 (defn build-search-term
   "Remove the http or https term of the url"
   [url]
   (clojure.string/replace url #"^http(s?)://" ""))
 
-(defn search-tab-url []
+(defn search-tab-url
+  "Get the current tab url and update the state"
+  []
   (go
     (if-let [[tabs] (<! (tabs/query #js {"active" true "currentWindow" true}))]
       (let [tab (first tabs)
@@ -59,96 +80,31 @@
         (swap! app-state assoc :url url :title title)
         (get-topics (build-search-term url))))))
 
-(defn is-story? [item] (nil? (:story_id item)))
-(def is-comment? (complement is-story?))
-
-(defn stories []
+(defn stories
+  "Return the list of stories ordered by points desc"
+  []
   (sort-by :points > (filter is-story? @items-cursor)))
 
-(defn related-stories []
+(defn related-stories
   "Return the list of items that matched a comment, distinct by story id"
+  []
   (map first (vals (group-by :story_id (filter is-comment? @items-cursor)))))
 
 
 ;; React components
-;(defn state-logger-btn []
-;  [rc/button
-;   :label "Log the state"
-;   :on-click #(log @app-state)])
-
-(defn tab-link-cpt [url text]
-  [rc/hyperlink
-   :label text
-   :on-click #((tabs/create #js {"url" url "active" false}))])
-
-(defn story-cpt [item]
-  (let [url (str hn-item-url (:objectID item))]
-     [:p
-      [tab-link-cpt url (:title item)]
-      [:span
-       {:style {:font-size "0.8em"}}
-       (str (:points item) " points. " (:num_comments item) " comments")]]))
-
-(defn comment-cpt [item]
-  (let [url (str hn-item-url (:story_id item))]
-    [:p [tab-link-cpt url (:story_title item)]]))
-
-(defn stories-cpt []
-  [rc/v-box :children [
-                       [rc/title
-                        :label "Stories"
-                        :level :level2
-                        :underline? true]
-                       [:ul
-                        (for [item (stories)]
-                          ^{:key item} [:li
-                                        {:style {:list-style-type "none"}}
-                                        [story-cpt item]])]]])
-
-(defn related-stories-cpt []
-  [rc/v-box :children [
-                       [rc/title
-                        :label "Related"
-                        :level :level2
-                        :underline? true]
-                       [:ul
-                        (for [item (related-stories)]
-                          ^{:key item} [:li
-                                        {:style {:list-style-type "none"}}
-                                        [comment-cpt item]])]]])
-
-(defn loading-cpt []
-  [rc/box
-   :align :center
-   :child
-   [rc/throbber
-    :color "#ff6600"
-    :size :large
-    :style {}
-    ]])
-
-(defn blank-cpt []
-  [:p
-   "No match found. Why don't you "
-   [:a {:href (build-hn-submit-link)} "start the discussion?"]])
-
-(defn hn-cpt []
-  [rc/v-box
-   :children [[stories-cpt]
-              [related-stories-cpt]]])
-
 (defn main-cpt []
   [rc/v-box
    :size "auto"
-   :children [
-              (if (loading?)
-                [loading-cpt]
-                (if (no-results?)
-                  [blank-cpt]
-                  [hn-cpt]))]])
+   :children
+   [(if (error?)
+      [cpts/error-cpt (:error @app-state)]
+      (if (loading?)
+        [cpts/loading-cpt]
+        (if (no-results?)
+          [cpts/blank-cpt (build-hn-submit-link)]
+          [cpts/hn-cpt (stories) (related-stories)])))]])
 
-
-(defn frame []
+(defn frame-cpt []
   [rc/scroller
    :v-scroll :auto
    :height "600px"
@@ -159,28 +115,26 @@
 
 
 (defn mountit []
-  (r/render [frame] (aget (query "#main") 0)))
+  (r/render [frame-cpt] (aget (query "#main") 0)))
 
-(defn process-message! [message]
-  (log "POPUP: got message:" message))
+;(defn process-message! [message]
+;  (log "POPUP: got message:" message))
+;
+;(defn run-message-loop! [message-channel]
+;  (log "POPUP: starting message loop...")
+;  (go-loop []
+;           (when-let [message (<! message-channel)]
+;             (process-message! message)
+;             (recur))
+;           (log "POPUP: leaving message loop")))
 
-(defn run-message-loop! [message-channel]
-  (log "POPUP: starting message loop...")
-  (go-loop []
-           (when-let [message (<! message-channel)]
-             (process-message! message)
-             (recur))
-           (log "POPUP: leaving message loop")))
+;(defn connect-to-background-page! []
+;  (let [background-port (runtime/connect)]
+;    (run-message-loop! background-port)))
 
-(defn connect-to-background-page! []
-  (let [background-port (runtime/connect)]
-    (post-message! background-port "hello from POPUP!")
-    (run-message-loop! background-port)))
 
 ; -- main entry point -------------------------------------------------------------------------------------------------------
 
 (defn init! []
-  (log "POPUP: init")
   (mountit)
-  (search-tab-url)
-  (connect-to-background-page!))
+  (search-tab-url))
