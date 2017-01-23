@@ -9,5 +9,6 @@
 /checkouts
 /.tmp
 .figwheel_server.log
+.figwheel_hnhit.log
 .chrome-profile
 .DS_Store

@@ -22,45 +22,45 @@
    :on-click #(open-passive-tab url)])
 
 (defn story-cpt [item]
-  [:p
-   [tab-link-cpt (:hn-url item) (:title item)]
-   [:span
-    {:style {:font-size "0.8em"}}
-    (str (:points item) " points. " (:num_comments item) " comments")]])
+  [rc/v-box
+   :children
+   [[tab-link-cpt (:hn-url item) (:title item)]
+    [rc/h-box
+     :style {:font-size "0.8em"}
+     :children
+     [(str (:points item) " points. " (:num_comments item) " comments")]]]])
 
 (defn comment-cpt [item]
-  [:p [tab-link-cpt (:hn-url item) (:story_title item)]])
+  [tab-link-cpt (:hn-url item) (:story_title item)])
+
+(defn title-open-tab-cpt [label items]
+  [rc/title
+   :label [rc/h-box
+           :gap "10px"
+           :children [label
+                      [rc/md-icon-button
+                       :md-icon-name "zmdi-open-in-new"
+                       :tooltip "Open all stories in new tabs"
+                       :on-click #(open-all-tabs (map :hn-url items))]]]
+   :level :level2
+   :underline? true])
 
 (defn stories-cpt [items]
   [rc/v-box :children
-   [
-    [rc/title
-     :label [rc/h-box
-             :gap "10px"
-             :children ["Stories"
-                        [rc/md-icon-button
-                         :md-icon-name "zmdi-open-in-new"
-                         :tooltip "Open all stories in new tabs"
-                         :on-click #(open-all-tabs (map :hn-url items))]]]
-     :level :level2
-     :underline? true]
-    [:ul
-     (for [i items]
-       ^{:key i} [:li
-                  {:style {:list-style-type "none"}}
-                  [story-cpt i]])]]])
+   [[title-open-tab-cpt "Stories" items]
+    [rc/v-box
+     :gap "5px"
+     :children
+     [(for [i items]
+       ^{:key i} [story-cpt i])]]]])
 
 (defn related-stories-cpt [items]
-  [rc/v-box :children [
-                       [rc/title
-                        :label "Related"
-                        :level :level2
-                        :underline? true]
-                       [:ul
-                        (for [i items]
-                          ^{:key i} [:li
-                                     {:style {:list-style-type "none"}}
-                                     [comment-cpt i]])]]])
+  [rc/v-box :children
+   [[title-open-tab-cpt "Related" items]
+     [rc/v-box
+      :children
+      [(for [i items]
+        ^{:key i} [comment-cpt i])]]]])
 
 (defn loading-cpt
   []
@@ -72,12 +72,20 @@
     :size :large]])
 
 (defn blank-cpt [submit-link]
-  [:p
-   "No match found. Why don't you "
-   [tab-link-cpt submit-link "start the discussion?"]])
+  [rc/v-box
+   :align :center
+   :gap "10px"
+   :children
+   [[rc/md-icon-button :md-icon-name "zmdi-help-outline"]
+    [tab-link-cpt submit-link "No match found. Click to start the discussion!"]]])
 
 (defn error-cpt [http-code]
-  [:p (str "Sorry, an error occured (http code " http-code ")")])
+  [rc/v-box
+   :align :center
+   :gap "10px"
+   :children
+   [[rc/md-icon-button :md-icon-name "zmdi-help-outline"]
+    [rc/label :label (str "Sorry, an error occured. (http code " http-code ")")]]])
 
 (defn hn-cpt [stories related-stories]
   [rc/v-box
