@@ -1,6 +1,4 @@
-# hnhit
-
-Based on https://github.com/binaryage/chromex-sample
+# HNhit
 
 ### Local setup
 
@@ -28,3 +26,7 @@ java, maven, leiningen, etc.
   * use latest Chrome Canary with [Custom Formatters](https://github.com/binaryage/cljs-devtools#enable-custom-formatters-in-your-chrome-canary) enabled
   * open Chrome Canary and add `resources/unpacked` via "Load unpacked extension..."
   
+
+### Misc
+
+Based on https://github.com/binaryage/chromex-sample
