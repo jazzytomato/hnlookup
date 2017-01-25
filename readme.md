@@ -13,7 +13,7 @@ java, maven, leiningen, etc.
       git clone https://github.com/jazzytomato/hnhit.git
       cd hnhit
       ```
-  * chromex sample is gets built into `resources/unpacked/compiled` folder.
+  * it gets built into `resources/unpacked/compiled` folder.
 
     In one terminal session run (will build background and popup pages using figwheel):
       ```
@@ -25,7 +25,10 @@ java, maven, leiningen, etc.
       ```
   * use latest Chrome Canary with [Custom Formatters](https://github.com/binaryage/cljs-devtools#enable-custom-formatters-in-your-chrome-canary) enabled
   * open Chrome Canary and add `resources/unpacked` via "Load unpacked extension..."
-  
+
+### Todo
+
+Badge count to see the number of hits without opening the popup. This should be disabled by default but could be enabled in a settings panel.
 
 ### Misc
 
