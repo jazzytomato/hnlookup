@@ -20,10 +20,11 @@
                   :title   nil
                   }))
 
+
 (def items-cursor (r/cursor app-state [:items]))
 
 (defn no-results? [] (empty? @items-cursor))
-(defn error? [] (:error @app-state))
+(defn error? [] (some? (:error @app-state)))
 (defn loading? [] (:loading @app-state))
 (defn loading! [] (swap! app-state assoc :loading true :error nil))
 (defn finished-loading! [] (swap! app-state assoc :loading false))
