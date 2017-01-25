@@ -23,7 +23,8 @@
 
 (def items-cursor (r/cursor app-state [:items]))
 
-(defn no-results? [] (empty? @items-cursor))
+(defn results? [] (seq @items-cursor))
+(def no-results? (complement results?))
 (defn error? [] (some? (:error @app-state)))
 (defn loading? [] (:loading @app-state))
 (defn loading! [] (swap! app-state assoc :loading true :error nil))
@@ -138,4 +139,6 @@
 
 (defn init! []
   (mountit)
-  (search-tab-url))
+  (if (no-results?)
+    (search-tab-url)))
+

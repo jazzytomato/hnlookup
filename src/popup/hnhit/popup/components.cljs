@@ -71,6 +71,7 @@
     :color "#ff6600"
     :size :large]])
 
+;; icons are available here http://zavoloklom.github.io/material-design-iconic-font/icons.html
 (defn blank-cpt [submit-link]
   [rc/v-box
    :align :center
@@ -84,7 +85,7 @@
    :align :center
    :gap "10px"
    :children
-   [[rc/md-icon-button :md-icon-name "zmdi-help-outline"]
+   [[rc/md-icon-button :md-icon-name "zmdi-alert-polygon"]
     [rc/label :label (str "Sorry, an error occured. (http code " http-code ")")]]])
 
 (defn hn-cpt [stories related-stories]
