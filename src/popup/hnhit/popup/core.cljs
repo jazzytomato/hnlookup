@@ -77,10 +77,10 @@
     (if-let [[tabs] (<! (tabs/query #js {"active" true "currentWindow" true}))]
       (let [tab (first tabs)
             tab-url (.-url tab)
-            title (.-title tab)
-            search-terms (build-search-terms tab-url)]
-        (swap! app-state assoc :url tab-url :title title :search-terms search-terms)
-        (hn-api-search (first search-terms))))))
+            title (.-title tab)]
+        (if-let [search-terms (build-search-terms tab-url)]
+          (swap! app-state assoc :url tab-url :title title :search-terms search-terms)
+          (hn-api-search (first search-terms)))))))
 
 (defn stories
   "Return the list of stories ordered by points desc"
