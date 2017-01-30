@@ -13,13 +13,12 @@
             [hnhit.popup.components :as cpts]))
 
 (defonce app-state
-         (r/atom {:items   []
-                  :loading false
-                  :error   nil
-                  :url     nil
-                  :title   nil
-                  }))
-
+  (r/atom {:items   []
+           :loading false
+           :error   nil
+           :url     nil
+           :title   nil
+           :search-terms []}))
 
 (def items-cursor (r/cursor app-state [:items]))
 
@@ -30,7 +29,7 @@
 (defn loading! [] (swap! app-state assoc :loading true :error nil))
 (defn finished-loading! [] (swap! app-state assoc :loading false))
 
-(def hn-api-search-url "https://hn.algolia.com/api/v1/search?query=")
+(def hn-api-search-url "https://hn.algolia.com/api/v1/search")
 (def hn-submit-link "https://news.ycombinator.com/submitlink")
 (def hn-item-url "https://news.ycombinator.com/item?id=")
 
@@ -42,22 +41,10 @@
                            :objectID
                            :story_id))))
 
-
-(defn transform-response [r]
+(defn transform-response [m]
   "Maps the relevant URL for each item of the reponse and returns the array of items"
-  (let [hits (get-in r [:body :hits])]
+  (let [hits (get-in m [:body :hits])]
     (map #(assoc % :hn-url (build-hn-url %)) hits)))
-
-(defn get-topics
-  "Queries the HN Api and update the state with results."
-  [url]
-  (loading!)
-  (go (let [response (<! (http/get (str hn-api-search-url url)))]
-        (if (= (:status response) 200)
-          (swap! app-state assoc :items (transform-response response))
-          (swap! app-state assoc :error (:status response)))
-        (finished-loading!))))
-
 
 (defn build-hn-submit-link
   "Build a submit link based on the current tab url and title"
@@ -66,10 +53,22 @@
         title (:title @app-state)]
     (str hn-submit-link "?u=" url "&t=" title)))
 
-(defn build-search-term
-  "Remove the http or https term of the url"
-  [url]
-  (clojure.string/replace url #"^http(s?)://" ""))
+(defn build-search-terms
+  "Sanitize url and returns an array of search terms. i.e.
+   the url https://www.domain.com/abcd/1234?q=query would return the vector
+   'www.domain.com/abcd/1234' 'www.domain.com' '/abcd/1234'"
+  [s]
+  (drop 1 (re-find #"^https?\://(([^/]+)([^\r\n]*)?)\??"  s)))
+
+(defn hn-api-search
+  "Queries the HN Api and update the state with results."
+  [s]
+  (loading!)
+  (go (let [response (<! (http/get hn-api-search-url {:query-params {"query" s}}))]
+        (if (= (:status response) 200)
+          (swap! app-state assoc :items (transform-response response))
+          (swap! app-state assoc :error (:status response)))
+        (finished-loading!))))
 
 (defn search-tab-url
   "Get the current tab url and update the state"
@@ -77,10 +76,11 @@
   (go
     (if-let [[tabs] (<! (tabs/query #js {"active" true "currentWindow" true}))]
       (let [tab (first tabs)
-            url (.-url tab)
-            title (.-title tab)]
-        (swap! app-state assoc :url url :title title)
-        (get-topics (build-search-term url))))))
+            tab-url (.-url tab)
+            title (.-title tab)
+            search-terms (build-search-terms tab-url)]
+        (swap! app-state assoc :url tab-url :title title :search-terms search-terms)
+        (hn-api-search (first search-terms))))))
 
 (defn stories
   "Return the list of stories ordered by points desc"
@@ -91,7 +91,6 @@
   "Return the list of items that matched a comment, distinct by story id"
   []
   (map first (vals (group-by :story_id (filter is-comment? @items-cursor)))))
-
 
 ;; React components
 (defn main-cpt []
@@ -114,7 +113,6 @@
    :padding "10px"
    :style {:background-color "#f6f6ef"}
    :child [main-cpt]])
-
 
 (defn mountit []
   (r/render [frame-cpt] (aget (query "#main") 0)))
