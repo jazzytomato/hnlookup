@@ -58,7 +58,7 @@
    the url https://www.domain.com/abcd/1234?q=query would return the vector
    'www.domain.com/abcd/1234' 'www.domain.com' '/abcd/1234'"
   [s]
-  (drop 1 (re-find #"^https?\://(([^/]+)([^\r\n]*)?)\??"  s)))
+  (drop 1 (re-find #"^https?\://(([^/]+)([^\r\n\#\?]*)?)\#?\??"  s)))
 
 (defn hn-api-search
   "Queries the HN Api and update the state with results."
@@ -137,7 +137,7 @@
 
 (defn init! []
   (mountit)
-  (log app-state)
+  (log @app-state)
   (if (no-results?)
     (search-tab-url)))
 

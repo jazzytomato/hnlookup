@@ -12,3 +12,5 @@
 .figwheel_hnhit.log
 .chrome-profile
 .DS_Store
+.nrepl-port
+hnhit.iml

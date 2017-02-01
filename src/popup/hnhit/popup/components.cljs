@@ -1,6 +1,7 @@
 (ns hnhit.popup.components
   (:require [chromex.logging :refer-macros [log]]
             [chromex.ext.tabs :as tabs]
+            [cljsjs.moment]
             [re-com.core :as rc]))
 
 ;; Chrome stuff
@@ -28,7 +29,8 @@
     [rc/h-box
      :style {:font-size "0.8em"}
      :children
-     [(str (:points item) " points. " (:num_comments item) " comments")]]]])
+     [(let [time-ago (-> (js/moment (:created_at item)) .fromNow)]
+      (str (:points item) " points. " (:num_comments item) " comments. " time-ago))]]]])
 
 (defn comment-cpt [item]
   [tab-link-cpt (:hn-url item) (:story_title item)])
@@ -47,7 +49,7 @@
 
 (defn stories-cpt [items]
   [rc/v-box :children
-   [[title-open-tab-cpt "Stories" items]
+   [[title-open-tab-cpt "Hits" items]
     [rc/v-box
      :gap "5px"
      :children
