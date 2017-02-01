@@ -79,8 +79,8 @@
             tab-url (.-url tab)
             title (.-title tab)]
         (if-let [search-terms (build-search-terms tab-url)]
-          (swap! app-state assoc :url tab-url :title title :search-terms search-terms)
-          (hn-api-search (first search-terms)))))))
+          ((swap! app-state assoc :url tab-url :title title :search-terms search-terms)
+            (hn-api-search (first search-terms))))))))
 
 (defn stories
   "Return the list of stories ordered by points desc"
@@ -137,6 +137,7 @@
 
 (defn init! []
   (mountit)
+  (log app-state)
   (if (no-results?)
     (search-tab-url)))
 
