@@ -154,6 +154,5 @@
 
 (defn init! []
   (mountit)
-  (log @app-state)
   (if (no-results?)
     (search-tab-url)))
