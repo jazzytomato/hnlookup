@@ -134,22 +134,6 @@
 (defn mountit []
   (r/render [frame-cpt] (aget (query "#main") 0)))
 
-;(defn process-message! [message]
-;  (log "POPUP: got message:" message))
-;
-;(defn run-message-loop! [message-channel]
-;  (log "POPUP: starting message loop...")
-;  (go-loop []
-;           (when-let [message (<! message-channel)]
-;             (process-message! message)
-;             (recur))
-;           (log "POPUP: leaving message loop")))
-
-;(defn connect-to-background-page! []
-;  (let [background-port (runtime/connect)]
-;    (run-message-loop! background-port)))
-
-
 ; -- main entry point -------------------------------------------------------------------------------------------------------
 
 (defn init! []

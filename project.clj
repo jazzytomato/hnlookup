@@ -17,9 +17,7 @@
             [lein-environ "1.1.0"]
             [lein-cooper "1.2.2"]]
 
-  :source-paths ["src/background"
-                 "src/popup"
-                 "src/content_script"]
+  :source-paths ["src/popup"]
 
   :clean-targets ^{:protect false} ["target"
                                     "resources/unpacked/compiled"
@@ -29,17 +27,7 @@
 
   :profiles {:unpacked
              {:cljsbuild {:builds
-                          {:background
-                           {:source-paths ["src/background"]
-                            :figwheel     true
-                            :compiler     {:output-to     "resources/unpacked/compiled/background/main.js"
-                                           :output-dir    "resources/unpacked/compiled/background"
-                                           :asset-path    "compiled/background"
-                                           :preloads      [devtools.preload]
-                                           :main          hnhit.background
-                                           :optimizations :none
-                                           :source-map    true}}
-                           :popup
+                          {:popup
                            {:source-paths ["src/popup"]
                             :figwheel     true
                             :compiler     {:output-to     "resources/unpacked/compiled/popup/main.js"
@@ -49,31 +37,13 @@
                                            :main          hnhit.popup
                                            :optimizations :none
                                            :source-map    true}}}}}
-             :unpacked-content-script
-             {:cljsbuild {:builds
-                          {:content-script
-                           {:source-paths ["src/content_script"]
-                            :compiler     {:output-to     "resources/unpacked/compiled/content-script/main.js"
-                                           :output-dir    "resources/unpacked/compiled/content-script"
-                                           :asset-path    "compiled/content-script"
-                                           :preloads      [devtools.preload]
-                                           :main          hnhit.content-script
-                                           ;:optimizations :whitespace                                                         ; content scripts cannot do eval / load script dynamically
-                                           :optimizations :advanced                                                           ; let's use advanced build with pseudo-names for now, there seems to be a bug in deps ordering under :whitespace mode
-                                           :pseudo-names  true
-                                           :pretty-print  true}}}}}
+
              :checkouts
              ; DON'T FORGET TO UPDATE scripts/ensure-checkouts.sh
              {:cljsbuild {:builds
-                          {:background {:source-paths ["checkouts/chromex/src/lib"
-                                                       "checkouts/chromex/src/exts"]}
+                          {
                            :popup      {:source-paths ["checkouts/chromex/src/lib"
                                                        "checkouts/chromex/src/exts"]}}}}
-             :checkouts-content-script
-             ; DON'T FORGET TO UPDATE scripts/ensure-checkouts.sh
-             {:cljsbuild {:builds
-                          {:content-script {:source-paths ["checkouts/chromex/src/lib"
-                                                           "checkouts/chromex/src/exts"]}}}}
 
              :figwheel
              {:figwheel {:server-port    6888
@@ -88,15 +58,7 @@
              :release
              {:env       {:chromex-elide-verbose-logging "true"}
               :cljsbuild {:builds
-                          {:background
-                           {:source-paths ["src/background"]
-                            :compiler     {:output-to     "resources/release/compiled/background.js"
-                                           :output-dir    "resources/release/compiled/background"
-                                           :asset-path    "compiled/background"
-                                           :main          hnhit.background
-                                           :optimizations :advanced
-                                           :elide-asserts true}}
-                           :popup
+                          { :popup
                            {:source-paths ["src/popup"]
                             :compiler     {:output-to     "resources/release/compiled/popup.js"
                                            :output-dir    "resources/release/compiled/popup"
@@ -104,24 +66,15 @@
                                            :main          hnhit.popup
                                            :optimizations :advanced
                                            :elide-asserts true}}
-                           :content-script
-                           {:source-paths ["src/content_script"]
-                            :compiler     {:output-to     "resources/release/compiled/content-script.js"
-                                           :output-dir    "resources/release/compiled/content-script"
-                                           :asset-path    "compiled/content-script"
-                                           :main          hnhit.content-script
-                                           :optimizations :advanced
-                                           :elide-asserts true}}}}}}
+                           }}}}
 
   :aliases {"dev-build"   ["with-profile" "+unpacked,+unpacked-content-script,+checkouts,+checkouts-content-script" "cljsbuild" "once"]
-            "fig"         ["with-profile" "+unpacked,+figwheel" "figwheel" "background" "popup"]
-            "content"     ["with-profile" "+unpacked-content-script" "cljsbuild" "auto" "content-script"]
+            "fig"         ["with-profile" "+unpacked,+figwheel" "figwheel" "popup"]
             "fig-dev"     ["with-profile" "+unpacked,+figwheel,+checkouts" "figwheel" "background" "popup"]
-            "content-dev" ["with-profile" "+unpacked-content-script,+checkouts-content-script" "cljsbuild" "auto"]
             "devel"       ["with-profile" "+cooper" "do"                                                                      ; for mac only
                            ["shell" "scripts/ensure-checkouts.sh"]
                            ["cooper"]]
             "release"     ["with-profile" "+release" "do"
                            ["clean"]
-                           ["cljsbuild" "once" "background" "popup" "content-script"]]
+                           ["cljsbuild" "once" "popup"]]
             "package"     ["shell" "scripts/package.sh"]})

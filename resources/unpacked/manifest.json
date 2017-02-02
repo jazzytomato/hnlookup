@@ -3,10 +3,10 @@
    also we allow unsafe eval for figwheel
 */
 {
-  "name": "hnhit-dev",
+  "name": "HNhit-dev",
   "version": "0.1.0",
   "browser_action": {
-    "default_title": "Show Hacker News hits",
+    "default_title": "Show Hacker News Hits",
     "default_popup": "popup.html",
     "default_icon": {
       "19": "images/icon19.png",
@@ -19,24 +19,9 @@
     "128": "images/icon128.png"
   },
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
-  "content_scripts": [
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "js": [
-        "compiled/content-script/main.js"
-      ],
-      "run_at": "document_end"
-    }
-  ],
-  "background": {
-    "page": "background.html",
-    "persistent": false
-  },
   "permissions": [
-    "storage",
-    "tabs"
+    "tabs",
+    "https://hn.algolia.com/"
   ],
   "manifest_version": 2
 }

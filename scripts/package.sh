@@ -26,7 +26,7 @@ fi
 VERSION_WITH_QUOTES=`cat project.clj | grep "defproject" | cut -d' ' -f3`
 VERSION=`echo "${VERSION_WITH_QUOTES//\"}"`
 
-PACKAGE_DIR="$RELEASES/chromex-sample-$VERSION"
+PACKAGE_DIR="$RELEASES/hnhit-$VERSION"
 
 if [ -d "$PACKAGE_DIR" ] ; then
   rm -rf "$PACKAGE_DIR"
