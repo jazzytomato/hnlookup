@@ -10,7 +10,8 @@
             [goog.dom :as gdom]
             [reagent.core :as r]
             [re-com.core :as rc]
-            [hnhit.popup.components :as cpts]))
+            [hnhit.popup.components :as cpts]
+            [cljsjs.moment]))
 
 (defonce app-state
   (r/atom {:items   []
@@ -32,6 +33,12 @@
 (def hn-api-search-url "https://hn.algolia.com/api/v1/search")
 (def hn-submit-link "https://news.ycombinator.com/submitlink")
 (def hn-item-url "https://news.ycombinator.com/item?id=")
+
+(defn repost-allowed? [stories]
+  (let [last-post-date (js/moment (:created_at (apply max-key :created_at_i stories)))
+        total-points (apply + (map :points stories))]
+    (and (> (.. (js/moment) (diff last-post-date "months")) 8)
+         (< total-points 250))))
 
 (defn is-story? [item] (nil? (:story_id item)))
 (def is-comment? (complement is-story?))
@@ -82,28 +89,38 @@
           ((swap! app-state assoc :url tab-url :title title :search-terms search-terms)
             (hn-api-search (first search-terms))))))))
 
-(defn stories
+(defn list-stories
   "Return the list of stories ordered by points desc"
   []
   (sort-by :points > (filter is-story? @items-cursor)))
 
-(defn related-stories
+(defn list-related-stories
   "Return the list of items that matched a comment, distinct by story id"
   []
   (map first (vals (group-by :story_id (filter is-comment? @items-cursor)))))
 
 ;; React components
 (defn main-cpt []
-  [rc/v-box
-   :size "auto"
-   :children
-   [(if (error?)
-      [cpts/error-cpt (:error @app-state)]
-      (if (loading?)
-        [cpts/loading-cpt]
-        (if (no-results?)
-          [cpts/blank-cpt (build-hn-submit-link)]
-          [cpts/hn-cpt (stories) (related-stories)])))]])
+  (let [submit-link (build-hn-submit-link)
+        s (list-stories)
+        rs (list-related-stories)]
+    [rc/v-box
+     :size "auto"
+     :children
+     [(if (error?)
+        [cpts/error-cpt (:error @app-state)]
+        (if (loading?)
+          [cpts/loading-cpt]
+          (if (no-results?)
+            [cpts/blank-cpt submit-link]
+            [rc/v-box
+             :size "auto"
+             :gap "10px"
+             :children
+             [[cpts/hn-cpt s rs]
+              [rc/line]
+              (when (repost-allowed? s)
+                [cpts/repost-cpt submit-link])]])))]]))
 
 (defn frame-cpt []
   [rc/scroller

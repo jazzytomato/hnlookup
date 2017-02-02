@@ -23,14 +23,15 @@
    :on-click #(open-passive-tab url)])
 
 (defn story-cpt [item]
-  [rc/v-box
-   :children
-   [[tab-link-cpt (:hn-url item) (:title item)]
-    [rc/h-box
-     :style {:font-size "0.8em"}
+  (let [{:keys [title hn-url points author num_comments created_at]} item]
+    [rc/v-box
      :children
-     [(let [time-ago (-> (js/moment (:created_at item)) .fromNow)]
-      (str (:points item) " points. " (:num_comments item) " comments. " time-ago))]]]])
+     [[tab-link-cpt hn-url title]
+      [rc/h-box
+       :style {:font-size "0.8em"}
+       :children
+       [(let [time-ago (-> (js/moment created_at) .fromNow)]
+        (str points " points by " author ". " time-ago " | " num_comments " comments"))]]]]))
 
 (defn comment-cpt [item]
   [tab-link-cpt (:hn-url item) (:story_title item)])
@@ -90,9 +91,22 @@
    [[rc/md-icon-button :md-icon-name "zmdi-alert-polygon"]
     [rc/label :label (str "Sorry, an error occured. (http code " http-code ")")]]])
 
+(defn repost-cpt [submit-link]
+  [rc/hyperlink
+   :on-click #(open-passive-tab submit-link)
+   :tooltip "Based on the page's activity, it could eventually be reposted"
+   :label [rc/h-box
+           :gap "5px"
+           :justify :center
+           :children
+           [[rc/md-icon-button :md-icon-name "zmdi-info-outline" :size :smaller]
+            [:em "Repost"]
+            ]]])
+
 (defn hn-cpt [stories related-stories]
-  [rc/v-box
-   :children [[stories-cpt stories]
-              [related-stories-cpt related-stories]]])
+    [rc/v-box
+     :children [[stories-cpt stories]
+                [related-stories-cpt related-stories]]])
 
 
+;(when (< (.. (js/moment last-post-date) (diff (js/moment) "months")) 10) [repost-cpt submit-link])
