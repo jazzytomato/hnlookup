@@ -94,7 +94,7 @@
 (defn repost-cpt [submit-link]
   [rc/hyperlink
    :on-click #(open-passive-tab submit-link)
-   :tooltip "Based on the page's activity, it could eventually be reposted"
+   :tooltip "This page is eligible for a repost (no high or recent activity)"
    :label [rc/h-box
            :gap "5px"
            :justify :center
@@ -107,6 +107,3 @@
     [rc/v-box
      :children [[stories-cpt stories]
                 [related-stories-cpt related-stories]]])
-
-
-;(when (< (.. (js/moment last-post-date) (diff (js/moment) "months")) 10) [repost-cpt submit-link])

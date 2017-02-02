@@ -65,7 +65,7 @@
    the url https://www.domain.com/abcd/1234?q=query would return the vector
    'www.domain.com/abcd/1234' 'www.domain.com' '/abcd/1234'"
   [s]
-  (drop 1 (re-find #"^https?\://(([^/]+)([^\r\n\#\?]*)?)\#?\??"  s)))
+  (drop 1 (re-find #"^https?\://(([^/]+)([^\r\n\#]*)?)" s)))
 
 (defn hn-api-search
   "Queries the HN Api and update the state with results."
@@ -85,9 +85,9 @@
       (let [tab (first tabs)
             tab-url (.-url tab)
             title (.-title tab)]
-        (if-let [search-terms (build-search-terms tab-url)]
-          ((swap! app-state assoc :url tab-url :title title :search-terms search-terms)
-            (hn-api-search (first search-terms))))))))
+        (if-let [search-term (first (build-search-terms tab-url))]
+          ((swap! app-state assoc :url tab-url :title title)
+            (hn-api-search search-term)))))))
 
 (defn list-stories
   "Return the list of stories ordered by points desc"
@@ -157,4 +157,3 @@
   (log @app-state)
   (if (no-results?)
     (search-tab-url)))
-
