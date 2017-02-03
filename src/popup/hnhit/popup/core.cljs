@@ -126,7 +126,7 @@
   [rc/scroller
    :v-scroll :auto
    :height "600px"
-   :width "600px"
+   :width "500px"
    :padding "10px"
    :style {:background-color "#f6f6ef"}
    :child [main-cpt]])
