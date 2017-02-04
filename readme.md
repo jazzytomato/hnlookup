@@ -1,8 +1,8 @@
-# hnlookup
+# Hacker News Lookup
 
 ![alt tag](https://raw.githubusercontent.com/jazzytomato/hnlookup/master/resources/shared/images/icon128.png)
 
-hnlookup is a minimal and non-intrusive Chrome extension that allows you to lookup on Hacker News the page that you are currently viewing.
+Hacker News Lookup is a minimal and non-intrusive Chrome extension that allows you to lookup on Hacker News the page that you are currently viewing.
 
 ### Local setup
 
