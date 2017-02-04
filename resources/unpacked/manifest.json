@@ -3,7 +3,7 @@
    also we allow unsafe eval for figwheel
 */
 {
-  "name": "HNhit-dev",
+  "name": "HNHit-dev",
   "version": "0.1.0",
   "browser_action": {
     "default_title": "Show Hacker News Hits",

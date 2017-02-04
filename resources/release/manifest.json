@@ -1,5 +1,5 @@
 {
-  "name": "HNhit",
+  "name": "HNHit",
   "version": "0.1.0",
   "browser_action": {
     "default_title": "Hacker News Hits",

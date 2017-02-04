@@ -1,8 +1,12 @@
-# HNhit
+# HNHit
+
+![alt tag](https://raw.githubusercontent.com/jazzytomato/hnhit/master/resources/shared/images/icon128.png)
+
+HNHit is a minimal and non-intrusive chrome extension that allows you to look-up on Hacker News the page that you are currently viewing.
 
 ### Local setup
 
-##### Extension development
+#### Extension development
 
 We assume you are familiar with ClojureScript tooling and you have your machine in a good shape running recent versions of
 java, maven, leiningen, etc.
@@ -15,21 +19,23 @@ java, maven, leiningen, etc.
       ```
   * it gets built into `resources/unpacked/compiled` folder.
 
-    In one terminal session run (will build background and popup pages using figwheel):
+    In one terminal session run:
       ```
-      lein fig
+      lein dev
       ```
-    In a second terminal session run (will auto-build content-script):
-      ```
-      lein content
-      ```
+    if you want it to have the hot reload with figwheel, you will need to add the plugin `lein-figwheel` but I use `figwheel-sidecar` within cursive (see instructions below)
+
   * use latest Chrome Canary with [Custom Formatters](https://github.com/binaryage/cljs-devtools#enable-custom-formatters-in-your-chrome-canary) enabled
   * open Chrome Canary and add `resources/unpacked` via "Load unpacked extension..."
 
-### Todo
 
-Badge count to see the number of hits without opening the popup. This should be disabled by default but could be enabled in a settings panel.
+#### Figwheel + Cursive + Live REPL
 
-### Misc
+* add a run configuration under Run/Edit Configurations
 
-Based on https://github.com/binaryage/chromex-sample
+* Under clojure REPL, click `+` and select *Use clojure.main in normal JVM process* with parameters "scripts/repl.clj"
+
+
+### Thanks
+
+To all the authors and contributors of the libraries I use but especially for the [chromex library](https://github.com/binaryage/chromex) and [chromex-sample](https://github.com/binaryage/chromex-sample) boilerplate
