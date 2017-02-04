@@ -1,4 +1,4 @@
-(ns hnhit.popup.core
+(ns hnlookup.popup.core
   (:import [goog.dom query])
   (:require-macros [cljs.core.async.macros :refer [go go-loop]])
   (:require [cljs.core.async :refer [<!]]
@@ -10,7 +10,7 @@
             [goog.dom :as gdom]
             [reagent.core :as r]
             [re-com.core :as rc]
-            [hnhit.popup.components :as cpts]
+            [hnlookup.popup.components :as cpts]
             [cljsjs.moment]))
 
 (defonce app-state

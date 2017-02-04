@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>binaryage</groupId>
-  <artifactId>hnhit</artifactId>
+  <artifactId>hnlookup</artifactId>
   <packaging>jar</packaging>
   <version>0.1.0-SNAPSHOT</version>
-  <name>hnhit</name>
+  <name>hnlookup</name>
   <description/>
   <scm>
-    <connection>scm:git:git://github.com/jazzytomato/hnhit.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/jazzytomato/hnhit.git</developerConnection>
+    <connection>scm:git:git://github.com/jazzytomato/hnlookup.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/jazzytomato/hnlookup.git</developerConnection>
     <tag>b316df1377c341e13e7c840b1411fe39a23d4e9f
 </tag>
-    <url>https://github.com/jazzytomato/hnhit</url>
+    <url>https://github.com/jazzytomato/hnlookup</url>
   </scm>
   <build>
     <sourceDirectory>src/popup</sourceDirectory>

@@ -1,4 +1,4 @@
-(defproject binaryage/hnhit "0.1.0-SNAPSHOT"
+(defproject binaryage/hnlookup "0.1.0-SNAPSHOT"
   :dependencies [[org.clojure/clojure "1.9.0-alpha12"]
                  [org.clojure/clojurescript "1.9.229"]
                  [org.clojure/core.async "0.2.391"]
@@ -23,7 +23,7 @@
                                     "resources/release/compiled"]
 
   :figwheel {:server-port    6888
-              :server-logfile ".figwheel_hnhit.log"
+              :server-logfile ".figwheel_hnlookup.log"
               :repl           true}
 
   :cljsbuild  {:builds
@@ -34,7 +34,7 @@
                                  :output-dir    "resources/unpacked/compiled/popup"
                                  :asset-path    "compiled/popup"
                                  :preloads      [devtools.preload]
-                                 :main          hnhit.popup
+                                 :main          hnlookup.popup
                                  :optimizations :none
                                  :source-map    true}}
                :release
@@ -42,7 +42,7 @@
                  :compiler     {:output-to     "resources/release/compiled/popup.js"
                                 :output-dir    "resources/release/compiled/popup"
                                 :asset-path    "compiled/popup"
-                                :main          hnhit.popup
+                                :main          hnlookup.popup
                                 :optimizations :advanced
                                 :elide-asserts true}}}}
 

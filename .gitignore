@@ -9,8 +9,8 @@
 /checkouts
 /.tmp
 .figwheel_server.log
-.figwheel_hnhit.log
+.figwheel_hnlookup.log
 .chrome-profile
 .DS_Store
 .nrepl-port
-hnhit.iml
+hnlookup.iml

@@ -1,0 +1,1966 @@
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 1.174 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/goog/deps.js
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.742 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.893 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.362 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/components.cljs   line:31  column:74  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m29[0m  [36m     :style {:font-size "0.8em"[0m
+  [36m30[0m  [36m     :children[0m
+  [33m31[0m  [1m     [(str (:points item) " points. " (:num_comments item) " comments")]]]])[0m
+  [0m  [0m  [33m                                                                         ^--- Unmatched delimiter ][0m
+  [36m32[0m  [36m[0m
+  [36m33[0m  [36m(defn comment-cpt [item][0m
+  [36m34[0m  [36m  [tab-link-cpt (:hn-url item) (:story_title item)])[0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.733 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup/components.cljs   line:18  column:2  ----[0m
+
+  [1mUse of undeclared Var hnlookup.popup.components/React[0m
+
+  [36m14[0m  [36m  [urls][0m
+  [36m15[0m  [36m  (doseq [url urls][0m
+  [36m16[0m  [36m    (open-passive-tab url)))[0m
+  [36m17[0m  [36m[0m
+  [33m18[0m  [1m React components[0m
+  [0m  [0m  [33m ^--- Use of undeclared Var hnlookup.popup.components/React[0m
+  [36m19[0m  [36m(defn tab-link-cpt [url text][0m
+  [36m20[0m  [36m  [rc/hyperlink[0m
+  [36m21[0m  [36m   :label text[0m
+  [36m22[0m  [36m   :on-click #(open-passive-tab url)])[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup/components.cljs   line:18  column:8  ----[0m
+
+  [1mUse of undeclared Var hnlookup.popup.components/components[0m
+
+  [36m14[0m  [36m  [urls][0m
+  [36m15[0m  [36m  (doseq [url urls][0m
+  [36m16[0m  [36m    (open-passive-tab url)))[0m
+  [36m17[0m  [36m[0m
+  [33m18[0m  [1m React components[0m
+  [0m  [0m  [33m       ^--- Use of undeclared Var hnlookup.popup.components/components[0m
+  [36m19[0m  [36m(defn tab-link-cpt [url text][0m
+  [36m20[0m  [36m  [rc/hyperlink[0m
+  [36m21[0m  [36m   :label text[0m
+  [36m22[0m  [36m   :on-click #(open-passive-tab url)])[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.8 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.683 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.832 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.628 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.952 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.81 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.646 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.821 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 1.513 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup.cljs   line:4  column:13  ----[0m
+
+  [1mUse of undeclared Var hnlookup.popup/alert[0m
+
+  [36m1[0m  [36m(ns hnlookup.popup[0m
+  [36m2[0m  [36m  (:require [hnlookup.popup.core :as core]))[0m
+  [36m3[0m  [36m[0m
+  [33m4[0m  [1m(js/onload (alert "yo"))[0m
+  [0m [0m  [33m            ^--- Use of undeclared Var hnlookup.popup/alert[0m
+  [36m5[0m  [36m(core/init!)[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup.cljs  ----[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup.cljs   line:4  column:13  ----[0m
+
+  [1mUse of undeclared Var hnlookup.popup/alert[0m
+
+  [36m1[0m  [36m(ns hnlookup.popup[0m
+  [36m2[0m  [36m  (:require [hnlookup.popup.core :as core]))[0m
+  [36m3[0m  [36m[0m
+  [33m4[0m  [1m(js/onload (alert "yo"))[0m
+  [0m [0m  [33m            ^--- Use of undeclared Var hnlookup.popup/alert[0m
+  [36m5[0m  [36m(core/init!)[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup.cljs  ----[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.72 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup.cljs   line:4  column:20  ----[0m
+
+  [1mUse of undeclared Var hnlookup.popup/alert[0m
+
+  [36m1[0m  [36m(ns hnlookup.popup[0m
+  [36m2[0m  [36m  (:require [hnlookup.popup.core :as core]))[0m
+  [36m3[0m  [36m[0m
+  [33m4[0m  [1m(js/window.onload (alert "yo"))[0m
+  [0m [0m  [33m                   ^--- Use of undeclared Var hnlookup.popup/alert[0m
+  [36m5[0m  [36m(core/init!)[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup.cljs  ----[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup.cljs   line:4  column:20  ----[0m
+
+  [1mUse of undeclared Var hnlookup.popup/alert[0m
+
+  [36m1[0m  [36m(ns hnlookup.popup[0m
+  [36m2[0m  [36m  (:require [hnlookup.popup.core :as core]))[0m
+  [36m3[0m  [36m[0m
+  [33m4[0m  [1m(js/window.onload (alert "yo"))[0m
+  [0m [0m  [33m                   ^--- Use of undeclared Var hnlookup.popup/alert[0m
+  [36m5[0m  [36m(core/init!)[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup.cljs  ----[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.603 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.491 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.584 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.709 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.834 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.502 seconds.[0m
+[36m----  Could not Analyze  src/popup/hnlookup/popup/core.cljs   line:27  column:1  ----[0m
+
+  [1mToo many arguments to def at line 27 src/popup/hnlookup/popup/core.cljs[0m
+
+  [36m26[0m  [36m(defn results? [] (some? @items-cursor))[0m
+  [33m27[0m  [1m(def no-results? complement results?)[0m
+  [0m  [0m  [33m^--- Too many arguments to def at line 27 src/popup/hnlookup/popup/core.cljs[0m
+  [36m28[0m  [36m(defn error? [] (some? (:error @app-state)))[0m
+  [36m29[0m  [36m(defn loading? [] (:loading @app-state))[0m
+  [36m30[0m  [36m(defn loading! [] (swap! app-state assoc :loading true :error nil))[0m
+
+[36m----  Analysis Error : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.83 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.796 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.601 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.809 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.639 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.622 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.604 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.621 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.643 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.62 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.587 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup/core.cljs   line:26  column:20  ----[0m
+
+  [1mUse of undeclared Var hnlookup.popup.core/not-empty?[0m
+
+  [36m24[0m  [36m(def items-cursor (r/cursor app-state [:items]))[0m
+  [36m25[0m  [36m[0m
+  [33m26[0m  [1m(defn results? [] (not-empty? @items-cursor))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var hnlookup.popup.core/not-empty?[0m
+  [36m27[0m  [36m(def no-results? (complement results?))[0m
+  [36m28[0m  [36m(defn error? [] (some? (:error @app-state)))[0m
+  [36m29[0m  [36m(defn loading? [] (:loading @app-state))[0m
+  [36m30[0m  [36m(defn loading! [] (swap! app-state assoc :loading true :error nil))[0m
+  [36m31[0m  [36m(defn finished-loading! [] (swap! app-state assoc :loading false))[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.875 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.807 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.596 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.627 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.935 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.893 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.897 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.725 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.711 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.906 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.73 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.723 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.72 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.666 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.62 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.647 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.941 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup/core.cljs   line:107  column:25  ----[0m
+
+  [1mUse of undeclared Var hnlookup.popup.core/stories[0m
+
+  [36m103[0m  [36m      (if (loading?)[0m
+  [36m104[0m  [36m        [cpts/loading-cpt][0m
+  [36m105[0m  [36m        (if (no-results?)[0m
+  [36m106[0m  [36m          [cpts/blank-cpt (build-hn-submit-link)][0m
+  [33m107[0m  [1m          [cpts/hn-cpt (stories) (related-stories)])))]])[0m
+  [0m   [0m  [33m                        ^--- Use of undeclared Var hnlookup.popup.core/stories[0m
+  [36m108[0m  [36m[0m
+  [36m109[0m  [36m(defn frame-cpt [][0m
+  [36m110[0m  [36m  [rc/scroller[0m
+  [36m111[0m  [36m   :v-scroll :auto[0m
+  [36m112[0m  [36m   :height "400px"[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.852 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.645 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.452 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/core.cljs   line:88  column:56  ----[0m
+
+  [1mUnmatched delimiter )[0m
+
+  [36m86[0m  [36m  "Return the list of stories ordered by points desc"[0m
+  [36m87[0m  [36m  [[0m
+  [33m88[0m  [1m  (sort-by :points > (filter is-story? @items-cursor)))[0m
+  [0m  [0m  [33m                                                       ^--- Unmatched delimiter )[0m
+  [36m89[0m  [36m[0m
+  [36m90[0m  [36m(defn related-stories[0m
+  [36m91[0m  [36m  "Return the list of items that matched a comment, distinct by story id"[0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.703 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.814 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.627 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.76 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.676 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 2.217 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 1.19 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.882 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 1.04 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 1.129 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.829 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.833 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.989 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.9 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.904 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.872 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 29.448 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.864 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.918 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.885 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/goog/deps.js
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 1.401 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 2.866 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 2.841 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.931 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.616 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.631 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.591 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.766 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.609 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.673 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.589 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.598 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.787 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.769 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.796 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.637 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.825 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.415 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/core.cljs   line:77  column:1  ----[0m
+
+  [1mEOF while reading, starting at line 77 and column 1[0m
+
+  [33m77[0m  [1m(defn search-tab-url[0m
+  [0m  [0m  [33m^--- EOF while reading, starting at line 77 and column 1[0m
+  [36m78[0m  [36m  "Get the current tab url and update the state"[0m
+  [36m79[0m  [36m  [][0m
+  [36m80[0m  [36m  (go[0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.373 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/core.cljs   line:77  column:1  ----[0m
+
+  [1mEOF while reading, starting at line 77 and column 1[0m
+
+  [33m77[0m  [1m(defn search-tab-url[0m
+  [0m  [0m  [33m^--- EOF while reading, starting at line 77 and column 1[0m
+  [36m78[0m  [36m  "Get the current tab url and update the state"[0m
+  [36m79[0m  [36m  [][0m
+  [36m80[0m  [36m  (go[0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.382 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/core.cljs   line:77  column:1  ----[0m
+
+  [1mEOF while reading, starting at line 77 and column 1[0m
+
+  [33m77[0m  [1m(defn search-tab-url[0m
+  [0m  [0m  [33m^--- EOF while reading, starting at line 77 and column 1[0m
+  [36m78[0m  [36m  "Get the current tab url and update the state"[0m
+  [36m79[0m  [36m  [][0m
+  [36m80[0m  [36m  (go[0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.389 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/core.cljs   line:78  column:1  ----[0m
+
+  [1mEOF while reading, starting at line 78 and column 1[0m
+
+  [33m78[0m  [1m(defn search-tab-url[0m
+  [0m  [0m  [33m^--- EOF while reading, starting at line 78 and column 1[0m
+  [36m79[0m  [36m  "Get the current tab url and update the state"[0m
+  [36m80[0m  [36m  [][0m
+  [36m81[0m  [36m  (go[0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.427 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/core.cljs   line:78  column:1  ----[0m
+
+  [1mEOF while reading, starting at line 78 and column 1[0m
+
+  [33m78[0m  [1m(defn search-tab-url[0m
+  [0m  [0m  [33m^--- EOF while reading, starting at line 78 and column 1[0m
+  [36m79[0m  [36m  "Get the current tab url and update the state"[0m
+  [36m80[0m  [36m  [][0m
+  [36m81[0m  [36m  (go[0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup/core.cljs   line:139  column:3  ----[0m
+
+  [1mWrong number of args (1) passed to hnlookup.popup.core/mountit[0m
+
+  [36m136[0m  [36m; -- main entry point -------------------------------------------------------------------------------------------------------[0m
+  [36m137[0m  [36m[0m
+  [36m138[0m  [36m(defn init! [][0m
+  [33m139[0m  [1m  (mountit[0m
+  [0m   [0m  [33m  ^--- Wrong number of args (1) passed to hnlookup.popup.core/mountit[0m
+  [36m140[0m  [36m;;   (if (no-results?)[0m
+  [36m141[0m  [36m   (search-tab-url)))[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.826 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup/core.cljs   line:139  column:3  ----[0m
+
+  [1mWrong number of args (1) passed to hnlookup.popup.core/mountit[0m
+
+  [36m136[0m  [36m; -- main entry point -------------------------------------------------------------------------------------------------------[0m
+  [36m137[0m  [36m[0m
+  [36m138[0m  [36m(defn init! [][0m
+  [33m139[0m  [1m  (mountit[0m
+  [0m   [0m  [33m  ^--- Wrong number of args (1) passed to hnlookup.popup.core/mountit[0m
+  [36m140[0m  [36m;;   (if (no-results?)[0m
+  [36m141[0m  [36m   (search-tab-url)))[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.795 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup/core.cljs   line:139  column:3  ----[0m
+
+  [1mWrong number of args (1) passed to hnlookup.popup.core/mountit[0m
+
+  [36m136[0m  [36m; -- main entry point -------------------------------------------------------------------------------------------------------[0m
+  [36m137[0m  [36m[0m
+  [36m138[0m  [36m(defn init! [][0m
+  [33m139[0m  [1m  (mountit[0m
+  [0m   [0m  [33m  ^--- Wrong number of args (1) passed to hnlookup.popup.core/mountit[0m
+  [36m140[0m  [36m;;   (if (no-results?)[0m
+  [36m141[0m  [36m   (search-tab-url)))[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.631 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup/core.cljs   line:139  column:3  ----[0m
+
+  [1mWrong number of args (1) passed to hnlookup.popup.core/mountit[0m
+
+  [36m136[0m  [36m; -- main entry point -------------------------------------------------------------------------------------------------------[0m
+  [36m137[0m  [36m[0m
+  [36m138[0m  [36m(defn init! [][0m
+  [33m139[0m  [1m  (mountit[0m
+  [0m   [0m  [33m  ^--- Wrong number of args (1) passed to hnlookup.popup.core/mountit[0m
+  [36m140[0m  [36m;;   (if (no-results?)[0m
+  [36m141[0m  [36m   (search-tab-url)))[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.612 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup/core.cljs   line:139  column:3  ----[0m
+
+  [1mWrong number of args (1) passed to hnlookup.popup.core/mountit[0m
+
+  [36m136[0m  [36m; -- main entry point -------------------------------------------------------------------------------------------------------[0m
+  [36m137[0m  [36m[0m
+  [36m138[0m  [36m(defn init! [][0m
+  [33m139[0m  [1m  (mountit[0m
+  [0m   [0m  [33m  ^--- Wrong number of args (1) passed to hnlookup.popup.core/mountit[0m
+  [36m140[0m  [36m;;   (if (no-results?)[0m
+  [36m141[0m  [36m   (search-tab-url)))[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.668 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup/core.cljs   line:139  column:3  ----[0m
+
+  [1mWrong number of args (1) passed to hnlookup.popup.core/mountit[0m
+
+  [36m136[0m  [36m; -- main entry point -------------------------------------------------------------------------------------------------------[0m
+  [36m137[0m  [36m[0m
+  [36m138[0m  [36m(defn init! [][0m
+  [33m139[0m  [1m  (mountit[0m
+  [0m   [0m  [33m  ^--- Wrong number of args (1) passed to hnlookup.popup.core/mountit[0m
+  [36m140[0m  [36m;;   (if (no-results?)[0m
+  [36m141[0m  [36m   (search-tab-url)))[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.816 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.637 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.844 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.686 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup/core.cljs   line:83  column:33  ----[0m
+
+  [1mUse of undeclared Var hnlookup.popup.core/search-terms[0m
+
+  [36m79[0m  [36m            tab-url (.-url tab)[0m
+  [36m80[0m  [36m            title (.-title tab)][0m
+  [36m81[0m  [36m        (if-let [search-terms (build-search-terms tab-url)][0m
+  [36m82[0m  [36m          (swap! app-state assoc :url tab-url :title title :search-terms search-terms)[0m
+  [33m83[0m  [1m          (hn-api-search (first search-terms)))))))[0m
+  [0m  [0m  [33m                                ^--- Use of undeclared Var hnlookup.popup.core/search-terms[0m
+  [36m84[0m  [36m[0m
+  [36m85[0m  [36m(defn stories[0m
+  [36m86[0m  [36m  "Return the list of stories ordered by points desc"[0m
+  [36m87[0m  [36m  [][0m
+  [36m88[0m  [36m  (sort-by :points > (filter is-story? @items-cursor)))[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.846 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup/core.cljs   line:83  column:33  ----[0m
+
+  [1mUse of undeclared Var hnlookup.popup.core/search-terms[0m
+
+  [36m79[0m  [36m            tab-url (.-url tab)[0m
+  [36m80[0m  [36m            title (.-title tab)][0m
+  [36m81[0m  [36m        (if-let [search-terms (build-search-terms tab-url)][0m
+  [36m82[0m  [36m          (swap! app-state assoc :url tab-url :title title :search-terms search-terms)[0m
+  [33m83[0m  [1m          (hn-api-search (first search-terms)))))))[0m
+  [0m  [0m  [33m                                ^--- Use of undeclared Var hnlookup.popup.core/search-terms[0m
+  [36m84[0m  [36m[0m
+  [36m85[0m  [36m(defn stories[0m
+  [36m86[0m  [36m  "Return the list of stories ordered by points desc"[0m
+  [36m87[0m  [36m  [][0m
+  [36m88[0m  [36m  (sort-by :points > (filter is-story? @items-cursor)))[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.856 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/goog/deps.js
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.945 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.565 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.956 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.727 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/goog/deps.js
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.901 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.651 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.727 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.872 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.478 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/components.cljs   line:33  column:84  ----[0m
+
+  [1mUnmatched delimiter )[0m
+
+  [36m31[0m  [36m     :children[0m
+  [36m32[0m  [36m     [(let [time-ago (.fromNow (js/moment) (:created_at item))[0m
+  [33m33[0m  [1m      (str (:points item) " points. " (:num_comments item) " comments. ") time-ago)]]]])[0m
+  [0m  [0m  [33m                                                                                   ^--- Unmatched delimiter )[0m
+  [36m34[0m  [36m[0m
+  [36m35[0m  [36m(defn comment-cpt [item][0m
+  [36m36[0m  [36m  [tab-link-cpt (:hn-url item) (:story_title item)])[0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.747 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.691 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.653 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.638 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 1.001 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.808 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.728 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.744 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.732 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.707 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.609 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 1.108 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.77 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.621 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 1.032 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.974 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.691 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 1.03 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.317 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/components.cljs   line:32  column:21  ----[0m
+
+  [1mMap literal must contain an even number of forms[0m
+
+  [36m30[0m  [36m:style {:font-size "0.8em"}[0m
+  [36m31[0m  [36m:children[0m
+  [33m32[0m  [1m[(let [{:keys }[0m
+  [0m  [0m  [33m               ^--- Map literal must contain an even number of forms[0m
+  [36m33[0m  [36m       time-ago (-> (js/moment (:created_at item)) .fromNow)][0m
+  [36m34[0m  [36m (str (:points item) " points by " (:author item) (:num_comments item) " comments"))]]]])[0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.309 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/components.cljs   line:32  column:65  ----[0m
+
+  [1mMap literal must contain an even number of forms[0m
+
+  [36m30[0m  [36m:style {:font-size "0.8em"}[0m
+  [36m31[0m  [36m:children[0m
+  [33m32[0m  [1m[(let [{:keys [points author num_comments created_at] item}[0m
+  [0m  [0m  [33m                                                           ^--- Map literal must contain an even number of forms[0m
+  [36m33[0m  [36m       time-ago (-> (js/moment (:created_at item)) .fromNow)][0m
+  [36m34[0m  [36m (str (:points item) " points by " (:author item) (:num_comments item) " comments"))]]]])[0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.711 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.304 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/components.cljs   line:33  column:58  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m31[0m  [36m     :children[0m
+  [36m32[0m  [36m     [(let [{:keys [points author num_comments created_at]} item[0m
+  [33m33[0m  [1m            time-ago (-> (js/moment created_at .fromNow)][0m
+  [0m  [0m  [33m                                                         ^--- Unmatched delimiter ][0m
+  [36m34[0m  [36m      (str points " points by " author num_comments item) " comments"))]]]])[0m
+  [36m35[0m  [36m[0m
+  [36m36[0m  [36m(defn comment-cpt [item][0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.315 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/components.cljs   line:33  column:58  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m31[0m  [36m     :children[0m
+  [36m32[0m  [36m     [(let [{:keys [points author num_comments created_at]} item[0m
+  [33m33[0m  [1m            time-ago (-> (js/moment created_at .fromNow)][0m
+  [0m  [0m  [33m                                                         ^--- Unmatched delimiter ][0m
+  [36m34[0m  [36m      (str points " points by " author " " time-ago " | " num_comments " comments"))]]]])[0m
+  [36m35[0m  [36m[0m
+  [36m36[0m  [36m(defn comment-cpt [item][0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.318 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/components.cljs   line:33  column:58  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m31[0m  [36m     :children[0m
+  [36m32[0m  [36m     [(let [{:keys [points author num_comments created_at]} item[0m
+  [33m33[0m  [1m            time-ago (-> (js/moment created_at .fromNow)][0m
+  [0m  [0m  [33m                                                         ^--- Unmatched delimiter ][0m
+  [36m34[0m  [36m      (str points " points by " author " " time-ago " | " num_comments " comments"))]]]]))[0m
+  [36m35[0m  [36m[0m
+  [36m36[0m  [36m(defn comment-cpt [item][0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.402 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/components.cljs   line:33  column:58  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m31[0m  [36m     :children[0m
+  [36m32[0m  [36m     [(let [{:keys [points author num_comments created_at]} item[0m
+  [33m33[0m  [1m            time-ago (-> (js/moment created_at .fromNow)][0m
+  [0m  [0m  [33m                                                         ^--- Unmatched delimiter ][0m
+  [36m34[0m  [36m      (str points " points by " author " " time-ago " | " num_comments " comments"))]]]])[0m
+  [36m35[0m  [36m[0m
+  [36m36[0m  [36m(defn comment-cpt [item][0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.747 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.763 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.7 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.768 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.476 seconds.[0m
+[36m----  Could not Analyze  src/popup/hnlookup/popup/components.cljs   line:33  column:48  ----[0m
+
+  [1mUnknown dot form of (. nil fromNow nil) with classification [:cljs.analyzer/error :cljs.analyzer/symbol ()][0m
+
+  [36m31[0m  [36m     :children[0m
+  [36m32[0m  [36m     [(let [{:keys [points author num_comments created_at]} item[0m
+  [33m33[0m  [1m            time-ago (-> (js/moment created_at (.fromNow)))][0m
+  [0m  [0m  [33m                                               ^--- Unknown dot form of (. nil fromNow nil) with classification [:cljs.analyzer/error :cljs.analyzer/symbol ()][0m
+  [36m34[0m  [36m      (str points " points by " author " " time-ago " - " num_comments " comments"))]]]])[0m
+  [36m35[0m  [36m[0m
+  [36m36[0m  [36m(defn comment-cpt [item][0m
+
+[36m----  Analysis Error : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.895 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.317 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/components.cljs   line:33  column:59  ----[0m
+
+  [1mUnmatched delimiter )[0m
+
+  [36m31[0m  [36m     :children[0m
+  [36m32[0m  [36m     [(let [{:keys [points author num_comments created_at]} item[0m
+  [33m33[0m  [1m            time-ago (-> (js/moment created_at) .fromNow)))][0m
+  [0m  [0m  [33m                                                          ^--- Unmatched delimiter )[0m
+  [36m34[0m  [36m      (str points " points by " author " " time-ago " - " num_comments " comments"))]]]])[0m
+  [36m35[0m  [36m[0m
+  [36m36[0m  [36m(defn comment-cpt [item][0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.322 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/components.cljs   line:33  column:59  ----[0m
+
+  [1mUnmatched delimiter )[0m
+
+  [36m31[0m  [36m     :children[0m
+  [36m32[0m  [36m     [(let [{:keys [points author num_comments created_at]} item[0m
+  [33m33[0m  [1m            time-ago (-> (js/moment created_at) .fromNow))][0m
+  [0m  [0m  [33m                                                          ^--- Unmatched delimiter )[0m
+  [36m34[0m  [36m      (str points " points by " author " " time-ago " - " num_comments " comments"))]]]])[0m
+  [36m35[0m  [36m[0m
+  [36m36[0m  [36m(defn comment-cpt [item][0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.321 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/components.cljs   line:34  column:85  ----[0m
+
+  [1mUnmatched delimiter )[0m
+
+  [36m32[0m  [36m     [(let [{:keys [points author num_comments created_at]} item[0m
+  [36m33[0m  [36m            time-ago (-> (js/moment created_at) .fromNow)])[0m
+  [33m34[0m  [1m      (str points " points by " author " " time-ago " - " num_comments " comments"))]]]])[0m
+  [0m  [0m  [33m                                                                                    ^--- Unmatched delimiter )[0m
+  [36m35[0m  [36m[0m
+  [36m36[0m  [36m(defn comment-cpt [item][0m
+  [36m37[0m  [36m  [tab-link-cpt (:hn-url item) (:story_title item)])[0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.7 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.713 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.655 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.738 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.685 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.938 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.896 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup/core.cljs   line:106  column:27  ----[0m
+
+  [1mUse of undeclared Var hnlookup.popup.core/submit-link[0m
+
+  [36m102[0m  [36m      [cpts/error-cpt (:error @app-state)][0m
+  [36m103[0m  [36m      (if (loading?)[0m
+  [36m104[0m  [36m        [cpts/loading-cpt][0m
+  [36m105[0m  [36m        (if (no-results?)[0m
+  [33m106[0m  [1m          [cpts/blank-cpt submit-link][0m
+  [0m   [0m  [33m                          ^--- Use of undeclared Var hnlookup.popup.core/submit-link[0m
+  [36m107[0m  [36m          [cpts/hn-cpt (stories) (related-stories) submit-link])))]])[0m
+  [36m108[0m  [36m[0m
+  [36m109[0m  [36m(defn frame-cpt [][0m
+  [36m110[0m  [36m  [rc/scroller[0m
+  [36m111[0m  [36m   :v-scroll :auto[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup/core.cljs   line:107  column:52  ----[0m
+
+  [1mUse of undeclared Var hnlookup.popup.core/submit-link[0m
+
+  [36m103[0m  [36m      (if (loading?)[0m
+  [36m104[0m  [36m        [cpts/loading-cpt][0m
+  [36m105[0m  [36m        (if (no-results?)[0m
+  [36m106[0m  [36m          [cpts/blank-cpt submit-link][0m
+  [33m107[0m  [1m          [cpts/hn-cpt (stories) (related-stories) submit-link])))]])[0m
+  [0m   [0m  [33m                                                   ^--- Use of undeclared Var hnlookup.popup.core/submit-link[0m
+  [36m108[0m  [36m[0m
+  [36m109[0m  [36m(defn frame-cpt [][0m
+  [36m110[0m  [36m  [rc/scroller[0m
+  [36m111[0m  [36m   :v-scroll :auto[0m
+  [36m112[0m  [36m   :height "600px"[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 1.741 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup/core.cljs   line:106  column:27  ----[0m
+
+  [1mUse of undeclared Var hnlookup.popup.core/submit-link[0m
+
+  [36m102[0m  [36m      [cpts/error-cpt (:error @app-state)][0m
+  [36m103[0m  [36m      (if (loading?)[0m
+  [36m104[0m  [36m        [cpts/loading-cpt][0m
+  [36m105[0m  [36m        (if (no-results?)[0m
+  [33m106[0m  [1m          [cpts/blank-cpt submit-link][0m
+  [0m   [0m  [33m                          ^--- Use of undeclared Var hnlookup.popup.core/submit-link[0m
+  [36m107[0m  [36m          [cpts/hn-cpt (stories) (related-stories) submit-link])))]])[0m
+  [36m108[0m  [36m[0m
+  [36m109[0m  [36m(defn frame-cpt [][0m
+  [36m110[0m  [36m  [rc/scroller[0m
+  [36m111[0m  [36m   :v-scroll :auto[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup/core.cljs   line:107  column:52  ----[0m
+
+  [1mUse of undeclared Var hnlookup.popup.core/submit-link[0m
+
+  [36m103[0m  [36m      (if (loading?)[0m
+  [36m104[0m  [36m        [cpts/loading-cpt][0m
+  [36m105[0m  [36m        (if (no-results?)[0m
+  [36m106[0m  [36m          [cpts/blank-cpt submit-link][0m
+  [33m107[0m  [1m          [cpts/hn-cpt (stories) (related-stories) submit-link])))]])[0m
+  [0m   [0m  [33m                                                   ^--- Use of undeclared Var hnlookup.popup.core/submit-link[0m
+  [36m108[0m  [36m[0m
+  [36m109[0m  [36m(defn frame-cpt [][0m
+  [36m110[0m  [36m  [rc/scroller[0m
+  [36m111[0m  [36m   :v-scroll :auto[0m
+  [36m112[0m  [36m   :height "600px"[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.736 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup/core.cljs   line:106  column:27  ----[0m
+
+  [1mUse of undeclared Var hnlookup.popup.core/submit-link[0m
+
+  [36m102[0m  [36m      [cpts/error-cpt (:error @app-state)][0m
+  [36m103[0m  [36m      (if (loading?)[0m
+  [36m104[0m  [36m        [cpts/loading-cpt][0m
+  [36m105[0m  [36m        (if (no-results?)[0m
+  [33m106[0m  [1m          [cpts/blank-cpt submit-link][0m
+  [0m   [0m  [33m                          ^--- Use of undeclared Var hnlookup.popup.core/submit-link[0m
+  [36m107[0m  [36m          [cpts/hn-cpt (stories) (related-stories) submit-link])))]])[0m
+  [36m108[0m  [36m[0m
+  [36m109[0m  [36m(defn frame-cpt [][0m
+  [36m110[0m  [36m  [rc/scroller[0m
+  [36m111[0m  [36m   :v-scroll :auto[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup/core.cljs   line:107  column:52  ----[0m
+
+  [1mUse of undeclared Var hnlookup.popup.core/submit-link[0m
+
+  [36m103[0m  [36m      (if (loading?)[0m
+  [36m104[0m  [36m        [cpts/loading-cpt][0m
+  [36m105[0m  [36m        (if (no-results?)[0m
+  [36m106[0m  [36m          [cpts/blank-cpt submit-link][0m
+  [33m107[0m  [1m          [cpts/hn-cpt (stories) (related-stories) submit-link])))]])[0m
+  [0m   [0m  [33m                                                   ^--- Use of undeclared Var hnlookup.popup.core/submit-link[0m
+  [36m108[0m  [36m[0m
+  [36m109[0m  [36m(defn frame-cpt [][0m
+  [36m110[0m  [36m  [rc/scroller[0m
+  [36m111[0m  [36m   :v-scroll :auto[0m
+  [36m112[0m  [36m   :height "600px"[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.749 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.596 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.746 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.692 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.682 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.934 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.764 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.699 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.692 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.711 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.906 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.689 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.403 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/components.cljs   line:106  column:53  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m104[0m  [36m:children [(when (max (stories [repost-cpt submit-link])[0m
+  [36m105[0m  [36m           [stories-cpt stories][0m
+  [33m106[0m  [1m           [related-stories-cpt related-stories]]])[0m
+  [0m   [0m  [33m                                                 ^--- Unmatched delimiter ][0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.598 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/components.cljs   line:107  column:55  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m105[0m  [36m:children [(when (-> (js/moment)last-post-date [repost-cpt submit-link])[0m
+  [36m106[0m  [36m           [stories-cpt stories][0m
+  [33m107[0m  [1m           [related-stories-cpt related-stories]]]))[0m
+  [0m   [0m  [33m                                                 ^--- Unmatched delimiter ][0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.552 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/components.cljs   line:107  column:55  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m105[0m  [36m:children [(when (-> (js/moment) last-post-date [repost-cpt submit-link])[0m
+  [36m106[0m  [36m           [stories-cpt stories][0m
+  [33m107[0m  [1m           [related-stories-cpt related-stories]]]))[0m
+  [0m   [0m  [33m                                                 ^--- Unmatched delimiter ][0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup/components.cljs   line:103  column:40  ----[0m
+
+  [1mUse of undeclared Var hnlookup.popup.components/last-post-date[0m
+
+  [36m 99[0m  [36m   [[rc/md-icon-button :md-icon-name "zmdi-info-outline" :size :smaller][0m
+  [36m100[0m  [36m    [tab-link-cpt submit-link "Click here to repost"]]])[0m
+  [36m101[0m  [36m[0m
+  [36m102[0m  [36m(defn hn-cpt [stories related-stories submit-link][0m
+  [33m103[0m  [1m  (let [last-post-date (-> (js/moment) last-post-date (apply max-key :created_at stories))][0m
+  [0m   [0m  [33m                                       ^--- Use of undeclared Var hnlookup.popup.components/last-post-date[0m
+  [36m104[0m  [36m    [rc/v-box[0m
+  [36m105[0m  [36m     :children [(when  [repost-cpt submit-link])[0m
+  [36m106[0m  [36m                [stories-cpt stories][0m
+  [36m107[0m  [36m                [related-stories-cpt related-stories]]]))[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.756 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup/components.cljs   line:103  column:40  ----[0m
+
+  [1mUse of undeclared Var hnlookup.popup.components/last-post-date[0m
+
+  [36m 99[0m  [36m   [[rc/md-icon-button :md-icon-name "zmdi-info-outline" :size :smaller][0m
+  [36m100[0m  [36m    [tab-link-cpt submit-link "Click here to repost"]]])[0m
+  [36m101[0m  [36m[0m
+  [36m102[0m  [36m(defn hn-cpt [stories related-stories submit-link][0m
+  [33m103[0m  [1m  (let [last-post-date (-> (js/moment) last-post-date (apply max-key :created_at stories))][0m
+  [0m   [0m  [33m                                       ^--- Use of undeclared Var hnlookup.popup.components/last-post-date[0m
+  [36m104[0m  [36m    [rc/v-box[0m
+  [36m105[0m  [36m     :children [[repost-cpt submit-link][0m
+  [36m106[0m  [36m                [last-post-date][0m
+  [36m107[0m  [36m                [stories-cpt stories][0m
+  [36m108[0m  [36m                [related-stories-cpt related-stories]]]))[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.751 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.68 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.695 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.666 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup/components.cljs   line:105  column:55  ----[0m
+
+  [1mUse of undeclared Var hnlookup.popup.components/substract[0m
+
+  [36m102[0m  [36m(defn hn-cpt [stories related-stories submit-link][0m
+  [36m103[0m  [36m  (let [last-post-date (apply max-key :created_at stories)][0m
+  [36m104[0m  [36m    [rc/v-box[0m
+  [33m105[0m  [1m     :children [(when (-> (js/moment) last-post-date (substract )) [repost-cpt submit-link])[0m
+  [0m   [0m  [33m                                                      ^--- Use of undeclared Var hnlookup.popup.components/substract[0m
+  [36m106[0m  [36m                [stories-cpt stories][0m
+  [36m107[0m  [36m                [related-stories-cpt related-stories]]]))[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.676 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.948 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.789 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.386 seconds.[0m
+[36m----  Could not Analyze  src/popup/hnlookup/popup/components.cljs   line:105  column:59  ----[0m
+
+  [1mUnknown dot form of (. (js/moment last-post-date) nil nil) with classification [:cljs.analyzer/expr :cljs.analyzer/error ()][0m
+
+  [36m103[0m  [36m(let [last-post-date (apply max-key :created_at stories)][0m
+  [36m104[0m  [36m  [rc/v-box[0m
+  [33m105[0m  [1m   :children [(when (log (-> (js/moment last-post-date) (.))) [repost-cpt submit-link])[0m
+  [0m   [0m  [33m                                                        ^--- Unknown dot form of (. (js/moment last-post-date) nil nil) with classification [:cljs.analyzer/expr :cljs.analyzer/error ()][0m
+  [36m106[0m  [36m              [stories-cpt stories][0m
+  [36m107[0m  [36m              [related-stories-cpt related-stories]]]))[0m
+
+[36m----  Analysis Error : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.381 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/components.cljs   line:107  column:55  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m105[0m  [36m:children [(when (log (-> (js/moment last-post-date (.substract ))) [repost-cpt submit-link])[0m
+  [36m106[0m  [36m           [stories-cpt stories][0m
+  [33m107[0m  [1m           [related-stories-cpt related-stories]]]))[0m
+  [0m   [0m  [33m                                                 ^--- Unmatched delimiter ][0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.759 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.694 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.963 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.742 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.848 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.751 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.698 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.691 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.706 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.706 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.454 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/components.cljs   line:107  column:55  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m105[0m  [36m:children [(when (log (.. (js/moment last-post-date) (diff (add 10 "months"))) [repost-cpt submit-link])[0m
+  [36m106[0m  [36m           [stories-cpt stories][0m
+  [33m107[0m  [1m           [related-stories-cpt related-stories]]]))[0m
+  [0m   [0m  [33m                                                 ^--- Unmatched delimiter ][0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.762 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.748 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.696 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.709 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.911 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.688 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.763 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.692 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.406 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/components.cljs   line:105  column:88  ----[0m
+
+  [1mInvalid number format [1-][0m
+
+  [36m103[0m  [36m(let [last-post-date (apply max-key :created_at_i stories)][0m
+  [36m104[0m  [36m  [rc/v-box[0m
+  [33m105[0m  [1m   :children [(when (< (.. (js/moment last-post-date) (diff (js/moment) "months")) 1-) [repost-cpt submit-link])[0m
+  [0m   [0m  [33m                                                                                     ^--- Invalid number format [1-][0m
+  [36m106[0m  [36m              [stories-cpt stories][0m
+  [36m107[0m  [36m              [related-stories-cpt related-stories]]]))[0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.843 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.756 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.828 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.785 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.711 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.963 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.708 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.777 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.895 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.752 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.933 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.748 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.668 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.782 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.764 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.834 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.37 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/components.cljs   line:103  column:89  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m102[0m  [36m(defn hn-cpt [stories related-stories submit-link][0m
+  [33m103[0m  [1m  (let [last-post-date ((js/moment (:created_at (apply max-key :created_at_i stories)))][0m
+  [0m   [0m  [33m                                                                                        ^--- Unmatched delimiter ][0m
+  [36m104[0m  [36m    [rc/v-box[0m
+  [36m105[0m  [36m     :children [(when (log (.. (js/moment) (diff last-post-date "months")) 3) [repost-cpt submit-link])[0m
+  [36m106[0m  [36m                [stories-cpt stories][0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.669 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.701 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.437 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/components.cljs   line:106  column:58  ----[0m
+
+  [1mUnmatched delimiter )[0m
+
+  [36m104[0m  [36m     :children [(when [repost-cpt submit-link])[0m
+  [36m105[0m  [36m                [stories-cpt stories][0m
+  [33m106[0m  [1m                [related-stories-cpt related-stories]]]))[0m
+  [0m   [0m  [33m                                                         ^--- Unmatched delimiter )[0m
+  [36m107[0m  [36m[0m
+  [36m108[0m  [36m[0m
+  [36m109[0m  [36m;(when (< (.. (js/moment last-post-date) (diff (js/moment) "months")) 10) [repost-cpt submit-link])[0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.4 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/components.cljs   line:106  column:58  ----[0m
+
+  [1mUnmatched delimiter )[0m
+
+  [36m104[0m  [36m     :children [(when [repost-cpt submit-link])[0m
+  [36m105[0m  [36m                [stories-cpt stories][0m
+  [33m106[0m  [1m                [related-stories-cpt related-stories]]]))[0m
+  [0m   [0m  [33m                                                         ^--- Unmatched delimiter )[0m
+  [36m107[0m  [36m[0m
+  [36m108[0m  [36m[0m
+  [36m109[0m  [36m;(when (< (.. (js/moment last-post-date) (diff (js/moment) "months")) 10) [repost-cpt submit-link])[0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.418 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/components.cljs   line:105  column:58  ----[0m
+
+  [1mUnmatched delimiter )[0m
+
+  [36m103[0m  [36m    [rc/v-box[0m
+  [36m104[0m  [36m     :children [[stories-cpt stories][0m
+  [33m105[0m  [1m                [related-stories-cpt related-stories]]]))[0m
+  [0m   [0m  [33m                                                         ^--- Unmatched delimiter )[0m
+  [36m106[0m  [36m[0m
+  [36m107[0m  [36m[0m
+  [36m108[0m  [36m;(when (< (.. (js/moment last-post-date) (diff (js/moment) "months")) 10) [repost-cpt submit-link])[0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.405 seconds.[0m
+[36m----  Could not Analyze  src/popup/hnlookup/popup/core.cljs   line:37  column:1  ----[0m
+
+  [1mToo many arguments to def at line 37 /Users/thomas/projects/clojure/hnlookup/src/popup/hnlookup/popup/core.cljs[0m
+
+  [36m36[0m  [36m;; TODO take points into account as well?[0m
+  [33m37[0m  [1m(def repost-allowed? [stories][0m
+  [0m  [0m  [33m^--- Too many arguments to def at line 37 /Users/thomas/projects/clojure/hnlookup/src/popup/hnlookup/popup/core.cljs[0m
+  [36m38[0m  [36m  (let [last-post-date (js/moment (:created_at (apply max-key :created_at_i stories)))][0m
+  [36m39[0m  [36m    (> (.. (js/moment) (diff last-post-date "months")) 10)))[0m
+
+[36m----  Analysis Error : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.304 seconds.[0m
+[36m----  Could not Analyze  src/popup/hnlookup/popup/core.cljs   line:38  column:1  ----[0m
+
+  [1mToo many arguments to def at line 38 src/popup/hnlookup/popup/core.cljs[0m
+
+  [36m37[0m  [36m;; TODO take points into account as well?[0m
+  [33m38[0m  [1m(def repost-allowed? [stories][0m
+  [0m  [0m  [33m^--- Too many arguments to def at line 38 src/popup/hnlookup/popup/core.cljs[0m
+  [36m39[0m  [36m  (let [last-post-date (js/moment (:created_at (apply max-key :created_at_i stories)))][0m
+  [36m40[0m  [36m    (> (.. (js/moment) (diff last-post-date "months")) 10)))[0m
+
+[36m----  Analysis Error : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.426 seconds.[0m
+[36m----  Could not Analyze  src/popup/hnlookup/popup/core.cljs   line:113  column:11  ----[0m
+
+  [1mToo many arguments to if at line 113 src/popup/hnlookup/popup/core.cljs[0m
+
+  [36m111[0m  [36m(if (loading?)[0m
+  [36m112[0m  [36m  [cpts/loading-cpt][0m
+  [33m113[0m  [1m  (if (no-results?)[0m
+  [0m   [0m  [33m  ^--- Too many arguments to if at line 113 src/popup/hnlookup/popup/core.cljs[0m
+  [36m114[0m  [36m    [(when (repost-allowed? s) cpts/repost_cpt)][0m
+  [36m115[0m  [36m    [cpts/blank-cpt submit-link][0m
+  [36m116[0m  [36m    [cpts/hn-cpt s rs submit-link])))]]))[0m
+
+[36m----  Analysis Error : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup/core.cljs   line:115  column:41  ----[0m
+
+  [1mUse of undeclared Var hnlookup.popup.components/repost_cpt[0m
+
+  [36m111[0m  [36m        (if (loading?)[0m
+  [36m112[0m  [36m          [cpts/loading-cpt][0m
+  [36m113[0m  [36m          (if (no-results?)[0m
+  [36m114[0m  [36m            [cpts/blank-cpt submit-link][0m
+  [33m115[0m  [1m            [(when (repost-allowed? s) [cpts/repost_cpt])[0m
+  [0m   [0m  [33m                                        ^--- Use of undeclared Var hnlookup.popup.components/repost_cpt[0m
+  [36m116[0m  [36m             [cpts/hn-cpt s rs submit-link]])))]]))[0m
+  [36m117[0m  [36m[0m
+  [36m118[0m  [36m(defn frame-cpt [][0m
+  [36m119[0m  [36m  [rc/scroller[0m
+  [36m120[0m  [36m   :v-scroll :auto[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.64 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.654 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.601 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.647 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.676 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.712 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.618 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.854 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.63 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.574 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.651 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.656 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.585 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.792 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.428 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/core.cljs   line:119  column:17  ----[0m
+
+  [1mUnmatched delimiter )[0m
+
+  [36m117[0m  [36m             [[0m
+  [36m118[0m  [36m              [cpts/hn-cpt s rs][0m
+  [33m119[0m  [1m              ])))]]))[0m
+  [0m   [0m  [33m                ^--- Unmatched delimiter )[0m
+  [36m120[0m  [36m[0m
+  [36m121[0m  [36m(defn frame-cpt [][0m
+  [36m122[0m  [36m  [rc/scroller[0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.595 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.633 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.602 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.904 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.685 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.753 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.712 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.681 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.902 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.739 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.683 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.675 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.669 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.917 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.675 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.743 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.721 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.77 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.715 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.988 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.817 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.667 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.679 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.691 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.995 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.682 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.845 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.698 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.658 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.602 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.701 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.605 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.596 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.633 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.679 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.926 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.581 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.594 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.609 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/core.cljs   line:117  column:1  ----[0m
+
+  [1mInvalid token: :[0m
+
+  [36m115[0m  [36m            [rc/v-box[0m
+  [36m116[0m  [36m             :justify :[0m
+  [33m117[0m  [1m             :children[0m
+  [0m   [0m  [33m^--- Invalid token: :[0m
+  [36m118[0m  [36m             [[cpts/hn-cpt s rs][0m
+  [36m119[0m  [36m              (when (repost-allowed? s)[0m
+  [36m120[0m  [36m                [rc/box :align-self :end :child [cpts/repost-cpt submit-link]])]])))]]))[0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.647 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.609 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.623 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.796 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.633 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.65 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.653 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.599 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.659 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.82 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.601 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.599 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.617 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.708 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.638 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.612 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup/core.cljs   line:120  column:16  ----[0m
+
+  [1mUse of undeclared Var hnlookup.popup.core/line[0m
+
+  [36m116[0m  [36m             :size "auto"[0m
+  [36m117[0m  [36m             :gap "30px"[0m
+  [36m118[0m  [36m             :children[0m
+  [36m119[0m  [36m             [[cpts/hn-cpt s rs][0m
+  [33m120[0m  [1m              [line][0m
+  [0m   [0m  [33m               ^--- Use of undeclared Var hnlookup.popup.core/line[0m
+  [36m121[0m  [36m              (when (repost-allowed? s)[0m
+  [36m122[0m  [36m                [cpts/repost-cpt submit-link])]])))]]))[0m
+  [36m123[0m  [36m[0m
+  [36m124[0m  [36m(defn frame-cpt [][0m
+  [36m125[0m  [36m  [rc/scroller[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.82 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.601 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.682 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.636 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.704 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.634 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.68 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.719 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.597 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.67 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.705 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.693 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.867 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.711 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.329 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/core.cljs   line:38  column:1  ----[0m
+
+  [1mEOF while reading, starting at line 38 and column 1[0m
+
+  [36m37[0m  [36m;; TODO take points into account as well?[0m
+  [33m38[0m  [1m(defn repost-allowed? [stories][0m
+  [0m  [0m  [33m^--- EOF while reading, starting at line 38 and column 1[0m
+  [36m39[0m  [36m  (let [last-post-date (js/moment (:created_at (apply max-key :created_at_i stories)))[0m
+  [36m40[0m  [36m        total-points (apply + (map :points stories))][0m
+  [36m41[0m  [36m    (log total-points)[0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.341 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/core.cljs   line:38  column:1  ----[0m
+
+  [1mEOF while reading, starting at line 38 and column 1[0m
+
+  [36m37[0m  [36m;; TODO take points into account as well?[0m
+  [33m38[0m  [1m(defn repost-allowed? [stories][0m
+  [0m  [0m  [33m^--- EOF while reading, starting at line 38 and column 1[0m
+  [36m39[0m  [36m  (let [last-post-date (js/moment (:created_at (apply max-key :created_at_i stories)))[0m
+  [36m40[0m  [36m        total-points (apply + (map :points stories))][0m
+  [36m41[0m  [36m    (log total-points)[0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.328 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/core.cljs   line:38  column:1  ----[0m
+
+  [1mEOF while reading, starting at line 38 and column 1[0m
+
+  [36m37[0m  [36m;; TODO take points into account as well?[0m
+  [33m38[0m  [1m(defn repost-allowed? [stories][0m
+  [0m  [0m  [33m^--- EOF while reading, starting at line 38 and column 1[0m
+  [36m39[0m  [36m  (let [last-post-date (js/moment (:created_at (apply max-key :created_at_i stories)))[0m
+  [36m40[0m  [36m        total-points (apply + (map :points stories))][0m
+  [36m41[0m  [36m    (and (> (.. (js/moment) (diff last-post-date "months")) 10)[0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.625 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.654 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.695 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.888 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/goog/deps.js
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.598 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.917 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.754 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup/core.cljs   line:90  column:75  ----[0m
+
+  [1mUse of undeclared Var hnlookup.popup.core/search-terms[0m
+
+  [36m86[0m  [36m            tab-url (.-url tab)[0m
+  [36m87[0m  [36m            title (.-title tab)][0m
+  [36m88[0m  [36m        (if-let [search-terms (build-search-terms tab-url)][0m
+  [36m89[0m  [36m          (log search-terms)[0m
+  [33m90[0m  [1m          ((swap! app-state assoc :url tab-url :title title :search-terms search-terms)[0m
+  [0m  [0m  [33m                                                                          ^--- Use of undeclared Var hnlookup.popup.core/search-terms[0m
+  [36m91[0m  [36m            (hn-api-search (first search-terms))))))))[0m
+  [36m92[0m  [36m[0m
+  [36m93[0m  [36m(defn list-stories[0m
+  [36m94[0m  [36m  "Return the list of stories ordered by points desc"[0m
+  [36m95[0m  [36m  [][0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/popup/hnlookup/popup/core.cljs   line:91  column:35  ----[0m
+
+  [1mUse of undeclared Var hnlookup.popup.core/search-terms[0m
+
+  [36m87[0m  [36m            title (.-title tab)][0m
+  [36m88[0m  [36m        (if-let [search-terms (build-search-terms tab-url)][0m
+  [36m89[0m  [36m          (log search-terms)[0m
+  [36m90[0m  [36m          ((swap! app-state assoc :url tab-url :title title :search-terms search-terms)[0m
+  [33m91[0m  [1m            (hn-api-search (first search-terms))))))))[0m
+  [0m  [0m  [33m                                  ^--- Use of undeclared Var hnlookup.popup.core/search-terms[0m
+  [36m92[0m  [36m[0m
+  [36m93[0m  [36m(defn list-stories[0m
+  [36m94[0m  [36m  "Return the list of stories ordered by points desc"[0m
+  [36m95[0m  [36m  [][0m
+  [36m96[0m  [36m  (sort-by :points > (filter is-story? @items-cursor)))[0m
+
+[36m----  Compiler Warning : Please see src/popup/hnlookup/popup/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.751 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.583 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.687 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.773 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.836 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.732 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.89 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.933 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/goog/deps.js
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[31mFailed to compile "resources/unpacked/compiled/popup/main.js" in 0.401 seconds.[0m
+[36m----  Could not Read  src/popup/hnlookup/popup/components.cljs   line:58  column:37  ----[0m
+
+  [1mUnmatched delimiter )[0m
+
+  [36m56[0m  [36m     :children[0m
+  [36m57[0m  [36m     [(for [i items][0m
+  [33m58[0m  [1m       ^{:key i} [story-cpt i])]]]])[0m
+  [0m  [0m  [33m                                    ^--- Unmatched delimiter )[0m
+  [36m59[0m  [36m[0m
+  [36m60[0m  [36m(defn related-stories-cpt [items][0m
+  [36m61[0m  [36m  [rc/v-box :children[0m
+
+[36m----  Reader Error : Please see src/popup/hnlookup/popup/components.cljs  ----[0m
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.7 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.674 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.712 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.666 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.669 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.628 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/goog/deps.js
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.862 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.817 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.851 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.617 seconds.[0m
+notifying browser that file changed:  out/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.642 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/goog/deps.js
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  resources/unpacked/compiled/popup/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 2.623 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/hnlookup/popup/core.js
+notifying browser that file changed:  resources/unpacked/compiled/popup/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 1.437 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/hnlookup/popup/components.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.846 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.652 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/goog/deps.js
+notifying browser that file changed:  resources/unpacked/compiled/popup/cljs_deps.js
+notifying browser that file changed:  resources/unpacked/compiled/popup/hnlookup/popup/core.js
+[0mCompiling "resources/unpacked/compiled/popup/main.js" from ["src/popup"]...[0m
+[32mSuccessfully compiled "resources/unpacked/compiled/popup/main.js" in 0.592 seconds.[0m
+notifying browser that file changed:  resources/unpacked/compiled/popup/hnlookup/popup/core.js

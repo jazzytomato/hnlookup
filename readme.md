@@ -1,8 +1,8 @@
-# HNHit
+# hnlookup
 
-![alt tag](https://raw.githubusercontent.com/jazzytomato/hnhit/master/resources/shared/images/icon128.png)
+![alt tag](https://raw.githubusercontent.com/jazzytomato/hnlookup/master/resources/shared/images/icon128.png)
 
-HNHit is a minimal and non-intrusive chrome extension that allows you to look-up on Hacker News the page that you are currently viewing.
+hnlookup is a minimal and non-intrusive Chrome extension that allows you to lookup on Hacker News the page that you are currently viewing.
 
 ### Local setup
 
@@ -14,8 +14,8 @@ java, maven, leiningen, etc.
   * clone this repo somewhere:
 
       ```
-      git clone https://github.com/jazzytomato/hnhit.git
-      cd hnhit
+      git clone https://github.com/jazzytomato/hnlookup.git
+      cd hnlookup
       ```
   * it gets built into `resources/unpacked/compiled` folder.
 

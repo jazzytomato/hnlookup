@@ -1,4 +1,4 @@
-(ns hnhit.popup.components
+(ns hnlookup.popup.components
   (:require [chromex.logging :refer-macros [log]]
             [chromex.ext.tabs :as tabs]
             [cljsjs.moment]

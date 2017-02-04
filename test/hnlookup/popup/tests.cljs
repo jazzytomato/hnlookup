@@ -1,4 +1,4 @@
-(ns hnhit.popup.tests
+(ns hnlookup.popup.tests
   (:require [cljs.test :refer-macros [deftest is testing run-tests]]))
 
 ;; TODO configure a runner with figwheel
