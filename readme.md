@@ -10,6 +10,7 @@ Hacker News Lookup is a minimal and non-intrusive Chrome extension that allows y
 
 [Blog post](http://jazzytomato.com/hnlookup-chrome-extension-clojurescript/)
 
+[Demo (video)](https://www.youtube.com/watch?v=cGIlV3ly7Z4)
 
 ### Local setup
 
