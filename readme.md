@@ -2,7 +2,14 @@
 
 ![alt tag](https://raw.githubusercontent.com/jazzytomato/hnlookup/master/resources/shared/images/icon128.png)
 
-Hacker News Lookup is a minimal and non-intrusive Chrome extension that allows you to lookup on Hacker News the page that you are currently viewing.
+Hacker News Lookup is a minimal and non-intrusive Chrome extension that allows you to lookup on Hacker News the page that you are currently viewing, and browse for related pages.
+
+### Links
+
+[Chrome Webstore](https://chrome.google.com/webstore/detail/hacker-news-lookup/ekfmfhhfalhmiacchemmhapffjaolffo)
+
+[Blog post](http://jazzytomato.com/hnlookup-chrome-extension-clojurescript/)
+
 
 ### Local setup
 
